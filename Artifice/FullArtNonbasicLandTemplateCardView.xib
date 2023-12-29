@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A313a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11198.2"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FullArtNonbasicLandTemplateCardView">
+            <connections>
+                <outlet property="art" destination="8wD-kU-5m0" id="D3X-O2-vvW"/>
+                <outlet property="artistName" destination="wZl-yD-kcq" id="MnL-5X-THF"/>
+                <outlet property="background" destination="YLv-wx-krI" id="O5Y-HC-sEk"/>
+                <outlet property="backgroundTexture" destination="nHg-D7-bd6" id="GMJ-ee-R8p"/>
+                <outlet property="border" destination="Pee-sH-l3K" id="wuT-fB-nbk"/>
+                <outlet property="cardType" destination="deB-3E-cdc" id="Iqc-yT-vNN"/>
+                <outlet property="collectorNumber" destination="klV-3h-scZ" id="MId-Cv-Hf9"/>
+                <outlet property="contentView" destination="d7w-5h-s6o" id="NYP-yl-K9a"/>
+                <outlet property="copyright" destination="mYc-eC-MHC" id="4Cw-S2-31h"/>
+                <outlet property="dateOverlay" destination="3w5-xZ-dpg" id="gW7-LF-jdy"/>
+                <outlet property="expansionSymbol" destination="yfl-4M-sgu" id="Qaj-Py-Gjt"/>
+                <outlet property="flavorText" destination="lbC-V6-2fe" id="eW3-I0-0sb"/>
+                <outlet property="flavorTextNoRules" destination="K0n-sW-H3V" id="cWZ-LL-fJC"/>
+                <outlet property="frameBorder" destination="cyE-Re-Lv6" id="hUI-ky-WXv"/>
+                <outlet property="name" destination="72Y-1c-Eq7" id="eNF-Xh-u9a"/>
+                <outlet property="paintbrushIcon" destination="Do7-NE-eHp" id="1g1-tV-yKZ"/>
+                <outlet property="promoText" destination="1Xw-vL-7jK" id="dDI-Pp-Duf"/>
+                <outlet property="rarityCode" destination="Uyr-Y6-9oG" id="UhZ-RW-hGU"/>
+                <outlet property="rulesText" destination="PTH-At-y6o" id="Bq5-MA-2YU"/>
+                <outlet property="rulesTextNoFlavor" destination="0ON-dS-ujs" id="myw-C7-UeZ"/>
+                <outlet property="setCode" destination="3Yn-FU-rZ8" id="5Br-kM-pdW"/>
+                <outlet property="titlebarAndTypeLine" destination="jgb-wo-h3d" id="Hgw-vp-BO9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView translatesAutoresizingMaskIntoConstraints="NO" id="d7w-5h-s6o" userLabel="Full Art Nonbasic Land Template">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="688"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YLv-wx-krI" userLabel="Card Background">
+                    <rect key="frame" x="-1" y="0.0" width="508" height="688"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="688" id="AO3-at-ILp"/>
+                        <constraint firstAttribute="width" constant="508" id="bL7-bw-UH1"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Standard Black Card Background" id="5ax-EA-hZD"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pee-sH-l3K" userLabel="Card Border">
+                    <rect key="frame" x="-1" y="0.0" width="508" height="688"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="688" id="9Z5-hf-8Nk"/>
+                        <constraint firstAttribute="width" constant="508" id="eyH-tC-RBr"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Token Black Card Border" id="vWF-6d-ddW"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8wD-kU-5m0" userLabel="Card Art">
+                    <rect key="frame" x="53" y="145" width="400" height="460"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="460" id="83s-fl-qnh"/>
+                        <constraint firstAttribute="width" constant="400" id="CLg-bA-OTO"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="GBJ-9s-Ldt"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nHg-D7-bd6" userLabel="Background Texture">
+                    <rect key="frame" x="-1" y="0.0" width="508" height="688"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="688" id="KrX-rL-aDd"/>
+                        <constraint firstAttribute="width" constant="508" id="kWW-gS-XYX"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Full Art Basic Land Background Texture" id="8UK-qW-Y97"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rGG-Ha-oip" userLabel="Card Border Overlay">
+                    <rect key="frame" x="-1" y="0.0" width="508" height="688"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Black Border Overlay" id="L62-x7-18z"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgb-wo-h3d" userLabel="Titlebar &amp; Type Line">
+                    <rect key="frame" x="-1" y="0.0" width="508" height="688"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="688" id="Ii5-VO-CFc"/>
+                        <constraint firstAttribute="width" constant="508" id="PK5-QC-3sn"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Full Art Nonbasic Land Colorless Titlebar &amp; Type Line" id="tqH-vD-7z6"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LYA-v1-iYP" userLabel="Body Text Box">
+                    <rect key="frame" x="-1" y="0.0" width="508" height="688"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="508" id="77r-oD-g5h"/>
+                        <constraint firstAttribute="height" constant="688" id="ZfK-kR-wCD"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Full Art Nonbasic Land Text Box" id="Kjs-KK-ecO"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yfl-4M-sgu" userLabel="Expansion Symbol">
+                    <rect key="frame" x="405" y="117" width="37" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="IoM-IJ-mWk"/>
+                        <constraint firstAttribute="width" constant="37" id="qHr-Ja-yq4"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="right" imageScaling="proportionallyUpOrDown" image="Default Common Expansion Symbol" id="Qmf-eW-Jqh"/>
+                </imageView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="fBh-GD-D1L" userLabel="Body Text Container">
+                    <rect key="frame" x="64" y="149" width="378" height="137"/>
+                    <subviews>
+                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="01A-Pg-0lJ" userLabel="Body Text Alignment Container">
+                            <rect key="frame" x="4" y="41" width="370" height="55"/>
+                            <subviews>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="371" translatesAutoresizingMaskIntoConstraints="NO" id="PTH-At-y6o" userLabel="Rules Text">
+                                    <rect key="frame" x="3" y="32" width="365" height="23"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="361" id="0ES-R5-l9o"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" allowsEditingTextAttributes="YES" id="3df-3g-Ng2">
+                                        <font key="font" metaFont="system" size="19"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verifyAmbiguity="off" preferredMaxLayoutWidth="371" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-V6-2fe" userLabel="Flavor Text">
+                                    <rect key="frame" x="3" y="0.0" width="365" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="361" id="nt1-0H-tPs"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" allowsEditingTextAttributes="YES" id="77S-iJ-NeB">
+                                        <font key="font" metaFont="system" size="18"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="370" id="Cpu-Jq-vgp"/>
+                                <constraint firstAttribute="bottom" secondItem="lbC-V6-2fe" secondAttribute="bottom" id="J9m-Hh-56I"/>
+                                <constraint firstAttribute="trailing" secondItem="lbC-V6-2fe" secondAttribute="trailing" constant="4" id="KgB-TI-Czv"/>
+                                <constraint firstItem="PTH-At-y6o" firstAttribute="leading" secondItem="01A-Pg-0lJ" secondAttribute="leading" constant="5" id="Rcq-jb-61u"/>
+                                <constraint firstItem="PTH-At-y6o" firstAttribute="top" secondItem="01A-Pg-0lJ" secondAttribute="top" id="aTV-EI-7tF"/>
+                                <constraint firstAttribute="trailing" secondItem="PTH-At-y6o" secondAttribute="trailing" constant="4" id="bXu-wv-P4N"/>
+                                <constraint firstItem="lbC-V6-2fe" firstAttribute="top" secondItem="PTH-At-y6o" secondAttribute="bottom" constant="10" id="iTF-Ci-ZiS"/>
+                                <constraint firstItem="lbC-V6-2fe" firstAttribute="leading" secondItem="01A-Pg-0lJ" secondAttribute="leading" constant="5" id="xxe-7Y-GeP"/>
+                            </constraints>
+                        </customView>
+                        <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="371" translatesAutoresizingMaskIntoConstraints="NO" id="0ON-dS-ujs" userLabel="Rules Text (No Flavor)">
+                            <rect key="frame" x="6" y="57" width="365" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="361" id="iOE-Pd-dHB"/>
+                            </constraints>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" allowsEditingTextAttributes="YES" id="aci-kl-40k">
+                                <font key="font" metaFont="system" size="19"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField hidden="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="371" translatesAutoresizingMaskIntoConstraints="NO" id="K0n-sW-H3V" userLabel="Flavor Text (No Rules)">
+                            <rect key="frame" x="6" y="58" width="365" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="361" id="UQ1-8q-0tO"/>
+                            </constraints>
+                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" allowsEditingTextAttributes="YES" id="dyi-BC-l4e">
+                                <font key="font" metaFont="system" size="18"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="K0n-sW-H3V" firstAttribute="centerX" secondItem="fBh-GD-D1L" secondAttribute="centerX" id="DKD-OP-tLc"/>
+                        <constraint firstItem="01A-Pg-0lJ" firstAttribute="centerX" secondItem="fBh-GD-D1L" secondAttribute="centerX" id="F26-ot-iEI"/>
+                        <constraint firstItem="K0n-sW-H3V" firstAttribute="centerY" secondItem="fBh-GD-D1L" secondAttribute="centerY" id="Hnt-dS-ZDv"/>
+                        <constraint firstAttribute="height" constant="137" id="JE4-hF-SaQ"/>
+                        <constraint firstItem="0ON-dS-ujs" firstAttribute="centerX" secondItem="fBh-GD-D1L" secondAttribute="centerX" id="Uyh-C0-hhD"/>
+                        <constraint firstAttribute="width" constant="378" id="hao-BK-8wD"/>
+                        <constraint firstItem="0ON-dS-ujs" firstAttribute="centerY" secondItem="fBh-GD-D1L" secondAttribute="centerY" id="jzY-sv-3P5"/>
+                        <constraint firstItem="01A-Pg-0lJ" firstAttribute="centerY" secondItem="fBh-GD-D1L" secondAttribute="centerY" id="r1v-hn-yGZ"/>
+                    </constraints>
+                </customView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cyE-Re-Lv6" userLabel="Frame Border">
+                    <rect key="frame" x="-1" y="0.0" width="508" height="688"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="688" id="aqN-LY-vG3"/>
+                        <constraint firstAttribute="width" constant="508" id="sIj-Em-mkE"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Full Art Nonbasic Land Colorless Frame Border" id="8pu-eI-DcJ"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Do7-NE-eHp" userLabel="Paintbrush Icon">
+                    <rect key="frame" x="117" y="53" width="15" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="6LR-8D-HMK"/>
+                        <constraint firstAttribute="width" constant="15" id="wbu-LQ-Sjb"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Paintbrush" id="4m4-RF-HoL"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="378" translatesAutoresizingMaskIntoConstraints="NO" id="72Y-1c-Eq7" userLabel="Card Name">
+                    <rect key="frame" x="61" y="592" width="382" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="378" id="Zqo-xa-eqc"/>
+                        <constraint firstAttribute="height" constant="36" id="uyA-M2-whp"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" placeholderString="" id="6Nn-um-ztT">
+                        <font key="font" metaFont="system" size="25"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="361" translatesAutoresizingMaskIntoConstraints="NO" id="3w5-xZ-dpg" userLabel="Date Overlay">
+                    <rect key="frame" x="81" y="561" width="345" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="341" id="8El-Sy-3tR"/>
+                        <constraint firstAttribute="height" constant="24" id="Y9V-aV-dx1"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="izT-1I-8kV">
+                        <font key="font" metaFont="system" size="16"/>
+                        <color key="textColor" red="1" green="0.63037923579999999" blue="0.0" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="378" translatesAutoresizingMaskIntoConstraints="NO" id="deB-3E-cdc" userLabel="Card Type">
+                    <rect key="frame" x="63" y="107" width="355" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="351" id="G3G-Pq-705"/>
+                        <constraint firstAttribute="height" constant="36" id="SgZ-mH-ekw"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="OcX-cg-4N1">
+                        <font key="font" metaFont="system" size="21"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="3Yn-FU-rZ8" userLabel="Set code">
+                    <rect key="frame" x="61" y="52" width="54" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="QYc-Sd-xCQ"/>
+                        <constraint firstAttribute="width" constant="50" id="beN-tP-Ntq"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="NUS-iu-u78">
+                        <font key="font" metaFont="system" size="11.5"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="51" translatesAutoresizingMaskIntoConstraints="NO" id="klV-3h-scZ" userLabel="Collector's Number">
+                    <rect key="frame" x="61" y="65" width="55" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="51" id="AZO-7N-d11"/>
+                        <constraint firstAttribute="height" constant="17" id="H39-Mu-Wgk"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="8dC-NG-Y1u">
+                        <font key="font" metaFont="system" size="11.5"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="35" translatesAutoresizingMaskIntoConstraints="NO" id="Uyr-Y6-9oG" userLabel="Rarity Code">
+                    <rect key="frame" x="114" y="65" width="39" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="Xyo-Zq-ABQ"/>
+                        <constraint firstAttribute="height" constant="17" id="heF-RF-GPU"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="ICe-uM-89Y">
+                        <font key="font" metaFont="system" size="11.5"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="154" translatesAutoresizingMaskIntoConstraints="NO" id="wZl-yD-kcq" userLabel="Artist Name">
+                    <rect key="frame" x="132" y="41" width="158" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="154" id="STs-NJ-uFc"/>
+                        <constraint firstAttribute="height" constant="27" id="vb7-qE-iaR"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="LrE-iz-1HS">
+                        <font key="font" metaFont="cellTitle"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="155" translatesAutoresizingMaskIntoConstraints="NO" id="1Xw-vL-7jK" userLabel="Promo Text">
+                    <rect key="frame" x="132" y="65" width="159" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="155" id="Ah9-WV-5e9"/>
+                        <constraint firstAttribute="height" constant="17" id="Ogc-W2-1mg"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="mLt-CD-Jgp">
+                        <font key="font" metaFont="system" size="11.5"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="165" translatesAutoresizingMaskIntoConstraints="NO" id="mYc-eC-MHC" userLabel="Copyright">
+                    <rect key="frame" x="276" y="66" width="169" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="2Tg-Qi-v4f"/>
+                        <constraint firstAttribute="width" constant="165" id="cmH-hr-3SH"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="rP8-19-08H"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="z21-1C-ddl"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" id="ZQE-tY-H9O">
+                        <font key="font" metaFont="system" size="7"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yfl-4M-sgu" secondAttribute="trailing" constant="64" id="1Wj-Mr-oEZ"/>
+                <constraint firstAttribute="trailing" secondItem="nHg-D7-bd6" secondAttribute="trailing" constant="-1" id="1YA-a1-1oU"/>
+                <constraint firstItem="rGG-Ha-oip" firstAttribute="bottom" secondItem="LYA-v1-iYP" secondAttribute="bottom" id="1dA-UG-3sI"/>
+                <constraint firstItem="klV-3h-scZ" firstAttribute="leading" secondItem="d7w-5h-s6o" secondAttribute="leading" constant="63" id="2zx-3O-Dya"/>
+                <constraint firstAttribute="trailing" secondItem="cyE-Re-Lv6" secondAttribute="trailing" constant="-1" id="3dI-2d-h7d"/>
+                <constraint firstItem="LYA-v1-iYP" firstAttribute="leading" secondItem="YLv-wx-krI" secondAttribute="leading" id="3ua-gc-k9M"/>
+                <constraint firstItem="rGG-Ha-oip" firstAttribute="leading" secondItem="Pee-sH-l3K" secondAttribute="leading" id="4Rf-pc-ghD"/>
+                <constraint firstItem="YLv-wx-krI" firstAttribute="top" secondItem="d7w-5h-s6o" secondAttribute="top" id="8gx-4o-grx"/>
+                <constraint firstItem="yfl-4M-sgu" firstAttribute="top" secondItem="3w5-xZ-dpg" secondAttribute="bottom" constant="417" id="94E-oX-lgh"/>
+                <constraint firstItem="3Yn-FU-rZ8" firstAttribute="baseline" secondItem="wZl-yD-kcq" secondAttribute="firstBaseline" id="AbO-ee-pS8"/>
+                <constraint firstItem="3Yn-FU-rZ8" firstAttribute="top" secondItem="deB-3E-cdc" secondAttribute="bottom" constant="38" id="Ag6-4B-7bZ"/>
+                <constraint firstAttribute="height" constant="688" id="Bq4-Uq-Nmp"/>
+                <constraint firstItem="1Xw-vL-7jK" firstAttribute="baseline" secondItem="klV-3h-scZ" secondAttribute="baseline" id="CeM-g2-MUG"/>
+                <constraint firstAttribute="trailing" secondItem="Pee-sH-l3K" secondAttribute="trailing" constant="-1" id="Gk7-1C-bcd"/>
+                <constraint firstItem="rGG-Ha-oip" firstAttribute="top" secondItem="Pee-sH-l3K" secondAttribute="top" id="Hap-mu-3Sh"/>
+                <constraint firstItem="jgb-wo-h3d" firstAttribute="top" secondItem="d7w-5h-s6o" secondAttribute="top" id="Hua-Nu-RdC"/>
+                <constraint firstAttribute="trailing" secondItem="mYc-eC-MHC" secondAttribute="trailing" constant="63" id="ICS-CT-geX"/>
+                <constraint firstAttribute="trailing" secondItem="jgb-wo-h3d" secondAttribute="trailing" constant="-1" id="Jz4-rN-UZl"/>
+                <constraint firstAttribute="trailing" secondItem="3w5-xZ-dpg" secondAttribute="trailing" constant="82" id="KuF-gq-ToM"/>
+                <constraint firstItem="nHg-D7-bd6" firstAttribute="top" secondItem="d7w-5h-s6o" secondAttribute="top" id="Lx5-Z2-0xw"/>
+                <constraint firstItem="Pee-sH-l3K" firstAttribute="top" secondItem="d7w-5h-s6o" secondAttribute="top" id="MLj-WU-R07"/>
+                <constraint firstItem="wZl-yD-kcq" firstAttribute="leading" secondItem="Do7-NE-eHp" secondAttribute="trailing" constant="2" id="Uge-k7-Wba"/>
+                <constraint firstItem="mYc-eC-MHC" firstAttribute="top" secondItem="deB-3E-cdc" secondAttribute="bottom" constant="29" id="VLv-Za-lNm"/>
+                <constraint firstAttribute="trailing" secondItem="mYc-eC-MHC" secondAttribute="trailing" constant="63" id="Vof-xr-peC"/>
+                <constraint firstItem="1Xw-vL-7jK" firstAttribute="baseline" secondItem="Uyr-Y6-9oG" secondAttribute="baseline" id="Wr3-wU-wst"/>
+                <constraint firstItem="deB-3E-cdc" firstAttribute="top" secondItem="3w5-xZ-dpg" secondAttribute="bottom" constant="418" id="XiK-qu-git"/>
+                <constraint firstItem="fBh-GD-D1L" firstAttribute="top" secondItem="3w5-xZ-dpg" secondAttribute="bottom" constant="275" id="a7X-md-LYW"/>
+                <constraint firstAttribute="trailing" secondItem="YLv-wx-krI" secondAttribute="trailing" constant="-1" id="cfT-Iu-Xy5"/>
+                <constraint firstItem="cyE-Re-Lv6" firstAttribute="top" secondItem="d7w-5h-s6o" secondAttribute="top" id="dek-9M-zXg"/>
+                <constraint firstItem="3w5-xZ-dpg" firstAttribute="top" secondItem="72Y-1c-Eq7" secondAttribute="bottom" constant="7" id="dgD-ho-bnI"/>
+                <constraint firstItem="72Y-1c-Eq7" firstAttribute="top" secondItem="d7w-5h-s6o" secondAttribute="top" constant="60" id="e0q-vf-yja"/>
+                <constraint firstItem="8wD-kU-5m0" firstAttribute="top" secondItem="d7w-5h-s6o" secondAttribute="top" constant="83" id="e2u-7P-M71"/>
+                <constraint firstItem="rGG-Ha-oip" firstAttribute="trailing" secondItem="LYA-v1-iYP" secondAttribute="trailing" id="egh-Wa-SaH"/>
+                <constraint firstItem="1Xw-vL-7jK" firstAttribute="leading" secondItem="klV-3h-scZ" secondAttribute="trailing" constant="20" id="ehW-ci-p9i"/>
+                <constraint firstAttribute="trailing" secondItem="72Y-1c-Eq7" secondAttribute="trailing" constant="65" id="fWL-nJ-YvZ"/>
+                <constraint firstItem="1Xw-vL-7jK" firstAttribute="top" secondItem="deB-3E-cdc" secondAttribute="bottom" constant="25" id="gfO-DM-XKL"/>
+                <constraint firstItem="LYA-v1-iYP" firstAttribute="top" secondItem="nHg-D7-bd6" secondAttribute="top" id="gjD-tf-WuY"/>
+                <constraint firstItem="Do7-NE-eHp" firstAttribute="leading" secondItem="3Yn-FU-rZ8" secondAttribute="trailing" constant="4" id="mVy-qv-fZ8"/>
+                <constraint firstItem="3Yn-FU-rZ8" firstAttribute="leading" secondItem="d7w-5h-s6o" secondAttribute="leading" constant="63" id="qKN-O4-CiI"/>
+                <constraint firstItem="Do7-NE-eHp" firstAttribute="top" secondItem="Uyr-Y6-9oG" secondAttribute="bottom" id="sHE-D1-qrD"/>
+                <constraint firstAttribute="width" constant="506" id="tfg-kG-lrS"/>
+                <constraint firstAttribute="trailing" secondItem="deB-3E-cdc" secondAttribute="trailing" constant="90" id="ubQ-W0-K70"/>
+                <constraint firstItem="Uyr-Y6-9oG" firstAttribute="leading" secondItem="klV-3h-scZ" secondAttribute="trailing" constant="2" id="zRO-2q-Tld"/>
+                <constraint firstAttribute="trailing" secondItem="fBh-GD-D1L" secondAttribute="trailing" constant="64" id="zZC-Fw-nIO"/>
+                <constraint firstAttribute="trailing" secondItem="8wD-kU-5m0" secondAttribute="trailing" constant="53" id="zud-ZW-tFt"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Black Border Overlay" width="198.47999572753906" height="269.51998901367188"/>
+        <image name="Default Common Expansion Symbol" width="768" height="768"/>
+        <image name="Full Art Basic Land Background Texture" width="197.27999877929688" height="269.39999389648438"/>
+        <image name="Full Art Nonbasic Land Colorless Frame Border" width="197.27999877929688" height="269.27999877929688"/>
+        <image name="Full Art Nonbasic Land Colorless Titlebar &amp; Type Line" width="197.27999877929688" height="269.27999877929688"/>
+        <image name="Full Art Nonbasic Land Text Box" width="197.27999877929688" height="269.27999877929688"/>
+        <image name="Paintbrush" width="208.32000732421875" height="122.87999725341797"/>
+        <image name="Standard Black Card Background" width="198.47999572753906" height="269.51998901367188"/>
+        <image name="Token Black Card Border" width="197.27999877929688" height="269.27999877929688"/>
+    </resources>
+</document>

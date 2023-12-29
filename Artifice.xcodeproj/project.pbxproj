@@ -1,0 +1,1090 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76009D141D76097C00903CFA /* Document+rarityStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76009D131D76097C00903CFA /* Document+rarityStatistics.swift */; };
+		76009D161D761A9400903CFA /* Document+colorStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76009D151D761A9400903CFA /* Document+colorStatistics.swift */; };
+		76009D181D761DDA00903CFA /* Document+statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76009D171D761DDA00903CFA /* Document+statistics.swift */; };
+		7606ECAA1D6E533D00287618 /* Document+Menubar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606ECA91D6E533D00287618 /* Document+Menubar.swift */; };
+		760C529B1D79278000A7D152 /* Document+setInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C529A1D79278000A7D152 /* Document+setInfo.swift */; };
+		760DB3281D4BD95F000E1C71 /* Document+CardsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760DB3271D4BD95F000E1C71 /* Document+CardsTable.swift */; };
+		76217CD91D5268D6007A208D /* matrixb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76405EC21D4CF7BB00B5CD40 /* matrixb.ttf */; };
+		76217CDA1D5268D6007A208D /* beleren-bold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76405EC01D4CF7B500B5CD40 /* beleren-bold-webfont.ttf */; };
+		76217CDB1D5268D6007A208D /* belerensmallcaps-bold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76405EC11D4CF7B500B5CD40 /* belerensmallcaps-bold-webfont.ttf */; };
+		76217CDC1D5268D6007A208D /* relay-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76405EBF1D4CF7A400B5CD40 /* relay-medium.ttf */; };
+		76217CDD1D5268D6007A208D /* mplantinit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76405EBE1D4CF79D00B5CD40 /* mplantinit.ttf */; };
+		76217CDE1D5268D6007A208D /* mplantin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76405EBD1D4CF78E00B5CD40 /* mplantin.ttf */; };
+		76217CE01D52801D007A208D /* Card+TextExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76217CDF1D52801D007A208D /* Card+TextExport.swift */; };
+		76283C4E1D4D799500E1F75C /* DocumentIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 76283C4D1D4D799500E1F75C /* DocumentIcon.icns */; };
+		7631C3461D4E98C300A1354E /* StandardTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7631C3451D4E98C300A1354E /* StandardTemplateCardView.xib */; };
+		7632E1141D4F0077008890BE /* TokenTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632E1131D4F0077008890BE /* TokenTemplateCardView.swift */; };
+		7632E1161D4F009D008890BE /* TokenTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7632E1151D4F009D008890BE /* TokenTemplateCardView.xib */; };
+		7632E1181D4FEB97008890BE /* FullArtTokenTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632E1171D4FEB97008890BE /* FullArtTokenTemplateCardView.swift */; };
+		7632E11A1D4FEBCE008890BE /* FullArtTokenTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7632E1191D4FEBCE008890BE /* FullArtTokenTemplateCardView.xib */; };
+		7633EB8A1D7021A90068DDA8 /* JaceBeleren-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7633EB891D70219F0068DDA8 /* JaceBeleren-Bold.ttf */; };
+		7633EB8E1D7515C10068DDA8 /* Document+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633EB8D1D7515C10068DDA8 /* Document+SearchBar.swift */; };
+		7633EB921D7530BF0068DDA8 /* SearchFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633EB911D7530BF0068DDA8 /* SearchFieldDelegate.swift */; };
+		763CBF0E1D517B8C00B2EC23 /* parseBodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763CBF0D1D517B8C00B2EC23 /* parseBodyText.swift */; };
+		763F85861D78E45A00C90BB8 /* NSImage+zoomed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763F85851D78E45A00C90BB8 /* NSImage+zoomed.swift */; };
+		7641D7971D4E1F7B00502C5E /* StandardTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641D7961D4E1F7B00502C5E /* StandardTemplateCardView.swift */; };
+		7641D7991D4E235700502C5E /* CardTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7641D7981D4E235700502C5E /* CardTemplateView.swift */; };
+		76432DB11D6C24C0000A03E1 /* MiracleTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76432DB01D6C24C0000A03E1 /* MiracleTemplateCardView.xib */; };
+		764BC4391D5F8FC90032AB0D /* CardNameFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4381D5F8FC90032AB0D /* CardNameFieldDelegate.swift */; };
+		764BC43B1D5F916C0032AB0D /* ManaCostFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC43A1D5F916C0032AB0D /* ManaCostFieldDelegate.swift */; };
+		764BC43D1D5F92B60032AB0D /* SplitCardTypeFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC43C1D5F92B60032AB0D /* SplitCardTypeFieldDelegate.swift */; };
+		764BC43F1D5F93760032AB0D /* FlavorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC43E1D5F93760032AB0D /* FlavorTextFieldDelegate.swift */; };
+		764BC4411D5F93DB0032AB0D /* ArtistFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4401D5F93DB0032AB0D /* ArtistFieldDelegate.swift */; };
+		764BC4431D5F953F0032AB0D /* PowerFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4421D5F953F0032AB0D /* PowerFieldDelegate.swift */; };
+		764BC4451D5F95940032AB0D /* ToughnessFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4441D5F95940032AB0D /* ToughnessFieldDelegate.swift */; };
+		764BC4491D5FA8D50032AB0D /* PromoTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4481D5FA8D50032AB0D /* PromoTextFieldDelegate.swift */; };
+		764BC44B1D5FA9240032AB0D /* DateOverlayTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC44A1D5FA9240032AB0D /* DateOverlayTextFieldDelegate.swift */; };
+		764BC44D1D5FA9680032AB0D /* CardNotesTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC44C1D5FA9680032AB0D /* CardNotesTextFieldDelegate.swift */; };
+		764BC44F1D5FA9BF0032AB0D /* SetCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC44E1D5FA9BF0032AB0D /* SetCodeTextFieldDelegate.swift */; };
+		764BC4511D5FAA100032AB0D /* CopyrightTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4501D5FAA100032AB0D /* CopyrightTextFieldDelegate.swift */; };
+		764BC4531D5FB3500032AB0D /* PlaneswalkerAbility1CostTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4521D5FB3500032AB0D /* PlaneswalkerAbility1CostTextFieldDelegate.swift */; };
+		764BC4551D5FB8F80032AB0D /* PlaneswalkerAbility2CostTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4541D5FB8F80032AB0D /* PlaneswalkerAbility2CostTextFieldDelegate.swift */; };
+		764BC4571D5FB9090032AB0D /* PlaneswalkerAbility3CostTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4561D5FB9090032AB0D /* PlaneswalkerAbility3CostTextFieldDelegate.swift */; };
+		764BC4591D5FB9160032AB0D /* PlaneswalkerAbility4CostTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4581D5FB9160032AB0D /* PlaneswalkerAbility4CostTextFieldDelegate.swift */; };
+		764BC45B1D5FB9A00032AB0D /* PlaneswalkerAbility1RulesTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC45A1D5FB9A00032AB0D /* PlaneswalkerAbility1RulesTextFieldDelegate.swift */; };
+		764BC45D1D5FB9CA0032AB0D /* PlaneswalkerAbility2RulesTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC45C1D5FB9CA0032AB0D /* PlaneswalkerAbility2RulesTextFieldDelegate.swift */; };
+		764BC45F1D5FB9DD0032AB0D /* PlaneswalkerAbility3RulesTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC45E1D5FB9DD0032AB0D /* PlaneswalkerAbility3RulesTextFieldDelegate.swift */; };
+		764BC4611D5FB9EB0032AB0D /* PlaneswalkerAbility4RulesTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4601D5FB9EB0032AB0D /* PlaneswalkerAbility4RulesTextFieldDelegate.swift */; };
+		764BC4631D5FBAC20032AB0D /* PlaneswalkerStartingLoyaltyTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764BC4621D5FBAC20032AB0D /* PlaneswalkerStartingLoyaltyTextFieldDelegate.swift */; };
+		765447791D53D7AC0077385D /* CardView+ImageRepresentations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765447781D53D7AC0077385D /* CardView+ImageRepresentations.swift */; };
+		7654477C1D546BC50077385D /* SanitizeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654477A1D546A6F0077385D /* SanitizeInput.swift */; };
+		7655C8FB1FA59A33001E1375 /* NSImage+DPIConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 766C565E1D80CE6B00C043CE /* NSImage+DPIConversion.m */; };
+		7655C8FC1FA59A37001E1375 /* NSImage+DPIConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657C0AE1D82373A00E5E44C /* NSImage+DPIConversion.swift */; };
+		7655C8FE1FA59A3C001E1375 /* NSImage+Rotated.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E106651D6699C700989A07 /* NSImage+Rotated.m */; };
+		7657C0B11D8333E600E5E44C /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657C0B01D8333E600E5E44C /* Keyword.swift */; };
+		7657C0B51D8345E700E5E44C /* BuiltinKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657C0B41D8345E700E5E44C /* BuiltinKeywords.swift */; };
+		766534571D864F01008B851D /* ArtificeDocumentSavePanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766534561D864F01008B851D /* ArtificeDocumentSavePanel.xib */; };
+		766534591D865627008B851D /* ArtificeDocumentSavePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766534581D865627008B851D /* ArtificeDocumentSavePanel.swift */; };
+		767DB48D1D7D353300792692 /* SplitCardRightNameFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767DB48C1D7D353300792692 /* SplitCardRightNameFieldDelegate.swift */; };
+		767DB48F1D7D41AD00792692 /* SplitCardRightManaCostFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767DB48E1D7D41AD00792692 /* SplitCardRightManaCostFieldDelegate.swift */; };
+		767DB4911D7D42A400792692 /* CardTypeFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767DB4901D7D42A400792692 /* CardTypeFieldDelegate.swift */; };
+		767DB4951D7E3A0C00792692 /* SplitCardArtistFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767DB4941D7E3A0C00792692 /* SplitCardArtistFieldDelegate.swift */; };
+		768193461D52873300AB5FEA /* RulesTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768193451D52873300AB5FEA /* RulesTextFieldDelegate.swift */; };
+		768DDE2A1D8CB983003C1925 /* TemplateImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768DDE291D8CB983003C1925 /* TemplateImageCache.swift */; };
+		7696D97F1D4C287300FD6226 /* SortCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696D97E1D4C287300FD6226 /* SortCards.swift */; };
+		76A69BB71D57D63F00C477CB /* Phyrexian.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76405EC31D4CF7D500B5CD40 /* Phyrexian.ttf */; };
+		76A69BBA1D583E8800C477CB /* Planeswalker4AbilityTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A69BB91D583E8800C477CB /* Planeswalker4AbilityTemplateCardView.swift */; };
+		76A69BBC1D583EAC00C477CB /* Planeswalker4AbilityTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A69BBB1D583EAC00C477CB /* Planeswalker4AbilityTemplateCardView.xib */; };
+		76A9AC401D5552D50017E2DA /* FullArtBasicLandTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9AC3F1D5552D50017E2DA /* FullArtBasicLandTemplateCardView.swift */; };
+		76A9AC421D5555490017E2DA /* FullArtBasicLandTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A9AC411D5555490017E2DA /* FullArtBasicLandTemplateCardView.xib */; };
+		76A9AC4C1D558EE30017E2DA /* FullArtNonbasicLandTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9AC491D5587180017E2DA /* FullArtNonbasicLandTemplateCardView.swift */; };
+		76A9AC4D1D558EEA0017E2DA /* FullArtNonbasicLandTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A9AC4B1D5587650017E2DA /* FullArtNonbasicLandTemplateCardView.xib */; };
+		76A9AC501D5696410017E2DA /* PlaneswalkerTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9AC4F1D5696410017E2DA /* PlaneswalkerTemplateCardView.swift */; };
+		76A9AC521D56ABCE0017E2DA /* PlaneswalkerTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A9AC511D56ABCE0017E2DA /* PlaneswalkerTemplateCardView.xib */; };
+		76BAB0E61D7BD41D000EE493 /* SplitCardTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAB0E51D7BD41D000EE493 /* SplitCardTemplateCardView.swift */; };
+		76BAB0E91D7BD45C000EE493 /* SplitCardTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BAB0E81D7BD45C000EE493 /* SplitCardTemplateCardView.xib */; };
+		76BAB0EB1D7D33C4000EE493 /* SplitCardRightRulesTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BAB0EA1D7D33C4000EE493 /* SplitCardRightRulesTextFieldDelegate.swift */; };
+		76C95AE21D7774A0003BB9D5 /* MPlaintin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76C95AE11D7774A0003BB9D5 /* MPlaintin-Bold.ttf */; };
+		76C95AEB1D778F24003BB9D5 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 76C95AEA1D778F24003BB9D5 /* dsa_pub.pem */; };
+		76C95AF31D77DDEC003BB9D5 /* Document+typeStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C95AF21D77DDEC003BB9D5 /* Document+typeStatistics.swift */; };
+		76D852191D87473E00BC05C7 /* parseManaCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D852181D87473E00BC05C7 /* parseManaCost.swift */; };
+		76E106601D663B6900989A07 /* GameDayTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E1065F1D663B6900989A07 /* GameDayTemplateCardView.xib */; };
+		76E106621D663B7D00989A07 /* GameDayTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E106611D663B7D00989A07 /* GameDayTemplateCardView.swift */; };
+		76E106691D669A7900989A07 /* MultiCardPrintableView-Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E106681D669A7900989A07 /* MultiCardPrintableView-Letter.swift */; };
+		76E1066C1D66A15B00989A07 /* CardSet+Paginate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1066B1D66A15B00989A07 /* CardSet+Paginate.swift */; };
+		76E6AAD21D82163700DB1C0D /* MiracleTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76432DB21D6C24D1000A03E1 /* MiracleTemplateCardView.swift */; };
+		76EDFA8C1D85AC6400FCB353 /* SegmentedControlToolbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EDFA8B1D85AC6400FCB353 /* SegmentedControlToolbarItem.swift */; };
+		76EE44201D4BC7E400154175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE441F1D4BC7E400154175 /* AppDelegate.swift */; };
+		76EE44221D4BC7E400154175 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE44211D4BC7E400154175 /* Document.swift */; };
+		76EE44251D4BC7E400154175 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76EE44231D4BC7E400154175 /* Document.xib */; };
+		76EE442A1D4BC7E400154175 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76EE44281D4BC7E400154175 /* MainMenu.xib */; };
+		76EE443A1D4BCAB300154175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EE44391D4BCAB300154175 /* Assets.xcassets */; };
+		76EE443C1D4BCAC800154175 /* ManaSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE443B1D4BCAC800154175 /* ManaSymbol.swift */; };
+		76EE44401D4BCB1500154175 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE443F1D4BCB1500154175 /* Card.swift */; };
+		76EE44421D4BCB3300154175 /* CardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE44411D4BCB3300154175 /* CardTemplate.swift */; };
+		76EE44441D4BCBD900154175 /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE44431D4BCBD900154175 /* CardSet.swift */; };
+		76EE44461D4BCBFC00154175 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE44451D4BCBFC00154175 /* Language.swift */; };
+		76EE44481D4BCC2C00154175 /* ExpansionSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE44471D4BCC2C00154175 /* ExpansionSymbol.swift */; };
+		76EE444A1D4BCC8000154175 /* ColorFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE44491D4BCC8000154175 /* ColorFlags.swift */; };
+		76EE444C1D4BCCBC00154175 /* BorderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE444B1D4BCCBC00154175 /* BorderColor.swift */; };
+		76EE444E1D4BCD1800154175 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE444D1D4BCD1800154175 /* CardView.swift */; };
+		76EF9C491D4BDA9400357E29 /* Document+update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF9C481D4BDA9400357E29 /* Document+update.swift */; };
+		76EF9C4B1D4BDB4800357E29 /* Document+FormUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF9C4A1D4BDB4800357E29 /* Document+FormUpdates.swift */; };
+		76F1397C1D9086CA00BE24B5 /* DocumentTabViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1397B1D9086CA00BE24B5 /* DocumentTabViewDelegate.swift */; };
+		76FBDB761D63C34300AD0022 /* MultiCardPrintableView-Letter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FBDB751D63C34300AD0022 /* MultiCardPrintableView-Letter.xib */; };
+		76FBDB781D641DF800AD0022 /* TransparentStandardTemplateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FBDB771D641DF800AD0022 /* TransparentStandardTemplateCardView.xib */; };
+		76FBDB7A1D64225500AD0022 /* TransparentStandardTemplateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBDB791D64225500AD0022 /* TransparentStandardTemplateCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		762DBFF21D80E155007DCFCA /* Copy Libraries and Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Libraries and Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		76009D131D76097C00903CFA /* Document+rarityStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+rarityStatistics.swift"; sourceTree = "<group>"; };
+		76009D151D761A9400903CFA /* Document+colorStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+colorStatistics.swift"; sourceTree = "<group>"; };
+		76009D171D761DDA00903CFA /* Document+statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+statistics.swift"; sourceTree = "<group>"; };
+		7606ECA91D6E533D00287618 /* Document+Menubar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+Menubar.swift"; sourceTree = "<group>"; };
+		760C529A1D79278000A7D152 /* Document+setInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+setInfo.swift"; sourceTree = "<group>"; };
+		760C529C1D7A125F00A7D152 /* Energy Counter.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Energy Counter.afdesign"; sourceTree = "<group>"; };
+		760DB3271D4BD95F000E1C71 /* Document+CardsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+CardsTable.swift"; sourceTree = "<group>"; };
+		76217CDF1D52801D007A208D /* Card+TextExport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Card+TextExport.swift"; sourceTree = "<group>"; };
+		76283C4D1D4D799500E1F75C /* DocumentIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DocumentIcon.icns; sourceTree = "<group>"; };
+		7631C3451D4E98C300A1354E /* StandardTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StandardTemplateCardView.xib; sourceTree = "<group>"; };
+		7632E1131D4F0077008890BE /* TokenTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenTemplateCardView.swift; sourceTree = "<group>"; };
+		7632E1151D4F009D008890BE /* TokenTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TokenTemplateCardView.xib; sourceTree = "<group>"; };
+		7632E1171D4FEB97008890BE /* FullArtTokenTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullArtTokenTemplateCardView.swift; sourceTree = "<group>"; };
+		7632E1191D4FEBCE008890BE /* FullArtTokenTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullArtTokenTemplateCardView.xib; sourceTree = "<group>"; };
+		7632E11B1D50524C008890BE /* Basic Land Mana Symbols.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Basic Land Mana Symbols.afdesign"; sourceTree = "<group>"; };
+		7633EB891D70219F0068DDA8 /* JaceBeleren-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JaceBeleren-Bold.ttf"; sourceTree = "<group>"; };
+		7633EB8C1D71C48F0068DDA8 /* Cockatrice Set Skeleton.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Cockatrice Set Skeleton.xml"; sourceTree = "<group>"; };
+		7633EB8D1D7515C10068DDA8 /* Document+SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+SearchBar.swift"; sourceTree = "<group>"; };
+		7633EB911D7530BF0068DDA8 /* SearchFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFieldDelegate.swift; sourceTree = "<group>"; };
+		763CBF0D1D517B8C00B2EC23 /* parseBodyText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseBodyText.swift; sourceTree = "<group>"; };
+		763F85831D78D06100C90BB8 /* Disk Image Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Disk Image Icon.png"; sourceTree = "<group>"; };
+		763F85851D78E45A00C90BB8 /* NSImage+zoomed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSImage+zoomed.swift"; sourceTree = "<group>"; };
+		76405EBD1D4CF78E00B5CD40 /* mplantin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mplantin.ttf; sourceTree = "<group>"; };
+		76405EBE1D4CF79D00B5CD40 /* mplantinit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mplantinit.ttf; sourceTree = "<group>"; };
+		76405EBF1D4CF7A400B5CD40 /* relay-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "relay-medium.ttf"; sourceTree = "<group>"; };
+		76405EC01D4CF7B500B5CD40 /* beleren-bold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beleren-bold-webfont.ttf"; sourceTree = "<group>"; };
+		76405EC11D4CF7B500B5CD40 /* belerensmallcaps-bold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "belerensmallcaps-bold-webfont.ttf"; sourceTree = "<group>"; };
+		76405EC21D4CF7BB00B5CD40 /* matrixb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = matrixb.ttf; sourceTree = "<group>"; };
+		76405EC31D4CF7D500B5CD40 /* Phyrexian.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Phyrexian.ttf; sourceTree = "<group>"; };
+		7641D7961D4E1F7B00502C5E /* StandardTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardTemplateCardView.swift; sourceTree = "<group>"; };
+		7641D7981D4E235700502C5E /* CardTemplateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTemplateView.swift; sourceTree = "<group>"; };
+		76432DB01D6C24C0000A03E1 /* MiracleTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiracleTemplateCardView.xib; sourceTree = "<group>"; };
+		76432DB21D6C24D1000A03E1 /* MiracleTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiracleTemplateCardView.swift; sourceTree = "<group>"; };
+		764BC4381D5F8FC90032AB0D /* CardNameFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNameFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC43A1D5F916C0032AB0D /* ManaCostFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManaCostFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC43C1D5F92B60032AB0D /* SplitCardTypeFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitCardTypeFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC43E1D5F93760032AB0D /* FlavorTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4401D5F93DB0032AB0D /* ArtistFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4421D5F953F0032AB0D /* PowerFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4441D5F95940032AB0D /* ToughnessFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToughnessFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4461D5FA5710032AB0D /* ReplaceManaText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceManaText.swift; sourceTree = "<group>"; };
+		764BC4481D5FA8D50032AB0D /* PromoTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC44A1D5FA9240032AB0D /* DateOverlayTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateOverlayTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC44C1D5FA9680032AB0D /* CardNotesTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNotesTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC44E1D5FA9BF0032AB0D /* SetCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4501D5FAA100032AB0D /* CopyrightTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyrightTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4521D5FB3500032AB0D /* PlaneswalkerAbility1CostTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerAbility1CostTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4541D5FB8F80032AB0D /* PlaneswalkerAbility2CostTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerAbility2CostTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4561D5FB9090032AB0D /* PlaneswalkerAbility3CostTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerAbility3CostTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4581D5FB9160032AB0D /* PlaneswalkerAbility4CostTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerAbility4CostTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC45A1D5FB9A00032AB0D /* PlaneswalkerAbility1RulesTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerAbility1RulesTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC45C1D5FB9CA0032AB0D /* PlaneswalkerAbility2RulesTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerAbility2RulesTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC45E1D5FB9DD0032AB0D /* PlaneswalkerAbility3RulesTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerAbility3RulesTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4601D5FB9EB0032AB0D /* PlaneswalkerAbility4RulesTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerAbility4RulesTextFieldDelegate.swift; sourceTree = "<group>"; };
+		764BC4621D5FBAC20032AB0D /* PlaneswalkerStartingLoyaltyTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerStartingLoyaltyTextFieldDelegate.swift; sourceTree = "<group>"; };
+		765447771D53CC240077385D /* Basic Usage.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Basic Usage.txt"; sourceTree = "<group>"; wrapsLines = 0; };
+		765447781D53D7AC0077385D /* CardView+ImageRepresentations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardView+ImageRepresentations.swift"; sourceTree = "<group>"; };
+		7654477A1D546A6F0077385D /* SanitizeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SanitizeInput.swift; sourceTree = "<group>"; };
+		7657C0AE1D82373A00E5E44C /* NSImage+DPIConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSImage+DPIConversion.swift"; sourceTree = "<group>"; };
+		7657C0B01D8333E600E5E44C /* Keyword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
+		7657C0B41D8345E700E5E44C /* BuiltinKeywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuiltinKeywords.swift; sourceTree = "<group>"; };
+		766534561D864F01008B851D /* ArtificeDocumentSavePanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtificeDocumentSavePanel.xib; sourceTree = "<group>"; };
+		766534581D865627008B851D /* ArtificeDocumentSavePanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtificeDocumentSavePanel.swift; sourceTree = "<group>"; };
+		766C565D1D80CE6B00C043CE /* NSImage+DPIConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+DPIConversion.h"; sourceTree = "<group>"; };
+		766C565E1D80CE6B00C043CE /* NSImage+DPIConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+DPIConversion.m"; sourceTree = "<group>"; };
+		767DB48C1D7D353300792692 /* SplitCardRightNameFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitCardRightNameFieldDelegate.swift; sourceTree = "<group>"; };
+		767DB48E1D7D41AD00792692 /* SplitCardRightManaCostFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitCardRightManaCostFieldDelegate.swift; sourceTree = "<group>"; };
+		767DB4901D7D42A400792692 /* CardTypeFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTypeFieldDelegate.swift; sourceTree = "<group>"; };
+		767DB4941D7E3A0C00792692 /* SplitCardArtistFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitCardArtistFieldDelegate.swift; sourceTree = "<group>"; };
+		768193451D52873300AB5FEA /* RulesTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesTextFieldDelegate.swift; sourceTree = "<group>"; };
+		768193481D52B43000AB5FEA /* Master Template - Tokens (Full Art - 2015 Style).afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Master Template - Tokens (Full Art - 2015 Style).afdesign"; sourceTree = "<group>"; };
+		768193491D52B43000AB5FEA /* Master Template - Tokens (2015 Style).afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Master Template - Tokens (2015 Style).afdesign"; sourceTree = "<group>"; };
+		7681934A1D52B43000AB5FEA /* Master Template (Standard - 2015).afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Master Template (Standard - 2015).afdesign"; sourceTree = "<group>"; };
+		7681934B1D52B43000AB5FEA /* Master Template (Full Art Lands - 2015).afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Master Template (Full Art Lands - 2015).afdesign"; sourceTree = "<group>"; };
+		7681934C1D52B43000AB5FEA /* Master Template (Full Art Expedition Style - 2015).afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Master Template (Full Art Expedition Style - 2015).afdesign"; sourceTree = "<group>"; };
+		768193521D52B46300AB5FEA /* Mana.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Mana.svg; sourceTree = "<group>"; };
+		768DDE291D8CB983003C1925 /* TemplateImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateImageCache.swift; sourceTree = "<group>"; };
+		7696D97D1D4C09EB00FD6226 /* Artifice Icon.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artifice Icon.afdesign"; sourceTree = "<group>"; };
+		7696D97E1D4C287300FD6226 /* SortCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortCards.swift; sourceTree = "<group>"; };
+		76A69BB91D583E8800C477CB /* Planeswalker4AbilityTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planeswalker4AbilityTemplateCardView.swift; sourceTree = "<group>"; };
+		76A69BBB1D583EAC00C477CB /* Planeswalker4AbilityTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Planeswalker4AbilityTemplateCardView.xib; sourceTree = "<group>"; };
+		76A69BBD1D5868CE00C477CB /* Master Template (4-ability Planeswalker).afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Master Template (4-ability Planeswalker).afdesign"; sourceTree = "<group>"; };
+		76A69BBE1D5868CE00C477CB /* Master Template (Planeswalker).afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Master Template (Planeswalker).afdesign"; sourceTree = "<group>"; };
+		76A9AC3F1D5552D50017E2DA /* FullArtBasicLandTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullArtBasicLandTemplateCardView.swift; sourceTree = "<group>"; };
+		76A9AC411D5555490017E2DA /* FullArtBasicLandTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullArtBasicLandTemplateCardView.xib; sourceTree = "<group>"; };
+		76A9AC491D5587180017E2DA /* FullArtNonbasicLandTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullArtNonbasicLandTemplateCardView.swift; sourceTree = "<group>"; };
+		76A9AC4B1D5587650017E2DA /* FullArtNonbasicLandTemplateCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullArtNonbasicLandTemplateCardView.xib; sourceTree = "<group>"; };
+		76A9AC4F1D5696410017E2DA /* PlaneswalkerTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneswalkerTemplateCardView.swift; sourceTree = "<group>"; };
+		76A9AC511D56ABCE0017E2DA /* PlaneswalkerTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaneswalkerTemplateCardView.xib; sourceTree = "<group>"; };
+		76ABE39A1D7F7E8600955AC8 /* Master Template (Split Cards - 2015).afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Master Template (Split Cards - 2015).afdesign"; sourceTree = "<group>"; };
+		76BAB0E51D7BD41D000EE493 /* SplitCardTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitCardTemplateCardView.swift; sourceTree = "<group>"; };
+		76BAB0E81D7BD45C000EE493 /* SplitCardTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplitCardTemplateCardView.xib; sourceTree = "<group>"; };
+		76BAB0EA1D7D33C4000EE493 /* SplitCardRightRulesTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitCardRightRulesTextFieldDelegate.swift; sourceTree = "<group>"; };
+		76C340081D811BDE0080EA17 /* fix_libs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = fix_libs.sh; path = ../fix_libs.sh; sourceTree = "<group>"; };
+		76C878C11D60F61F00D7AABC /* Artifice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Artifice-Bridging-Header.h"; sourceTree = "<group>"; };
+		76C911F71D6E8EE100914B67 /* Toolbar Icons.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Toolbar Icons.pxm"; sourceTree = "<group>"; };
+		76C95AE11D7774A0003BB9D5 /* MPlaintin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MPlaintin-Bold.ttf"; sourceTree = "<group>"; };
+		76C95AE31D7787B5003BB9D5 /* Disk Image Icon.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Disk Image Icon.afdesign"; sourceTree = "<group>"; };
+		76C95AEA1D778F24003BB9D5 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		76C95AEC1D77CBD8003BB9D5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		76C95AEE1D77CBFD003BB9D5 /* ArtificeAppcast.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ArtificeAppcast.xml; sourceTree = "<group>"; };
+		76C95AF21D77DDEC003BB9D5 /* Document+typeStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+typeStatistics.swift"; sourceTree = "<group>"; };
+		76CFC5031D53BCDF00A4B2E5 /* Text Codes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Text Codes.txt"; sourceTree = "<group>"; };
+		76D852181D87473E00BC05C7 /* parseManaCost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseManaCost.swift; sourceTree = "<group>"; };
+		76E1065F1D663B6900989A07 /* GameDayTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameDayTemplateCardView.xib; sourceTree = "<group>"; };
+		76E106611D663B7D00989A07 /* GameDayTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDayTemplateCardView.swift; sourceTree = "<group>"; };
+		76E106641D66999000989A07 /* NSImage+Rotated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+Rotated.h"; sourceTree = "<group>"; };
+		76E106651D6699C700989A07 /* NSImage+Rotated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Rotated.m"; sourceTree = "<group>"; };
+		76E106681D669A7900989A07 /* MultiCardPrintableView-Letter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MultiCardPrintableView-Letter.swift"; path = "../MultiCardPrintableView-Letter.swift"; sourceTree = "<group>"; };
+		76E1066B1D66A15B00989A07 /* CardSet+Paginate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardSet+Paginate.swift"; sourceTree = "<group>"; };
+		76EDFA8B1D85AC6400FCB353 /* SegmentedControlToolbarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlToolbarItem.swift; sourceTree = "<group>"; };
+		76EE441C1D4BC7E400154175 /* Artifice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artifice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76EE441F1D4BC7E400154175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76EE44211D4BC7E400154175 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		76EE44241D4BC7E400154175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		76EE44291D4BC7E400154175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		76EE442B1D4BC7E400154175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76EE44391D4BCAB300154175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76EE443B1D4BCAC800154175 /* ManaSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManaSymbol.swift; sourceTree = "<group>"; };
+		76EE443F1D4BCB1500154175 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		76EE44411D4BCB3300154175 /* CardTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTemplate.swift; sourceTree = "<group>"; };
+		76EE44431D4BCBD900154175 /* CardSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		76EE44451D4BCBFC00154175 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		76EE44471D4BCC2C00154175 /* ExpansionSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpansionSymbol.swift; sourceTree = "<group>"; };
+		76EE44491D4BCC8000154175 /* ColorFlags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFlags.swift; sourceTree = "<group>"; };
+		76EE444B1D4BCCBC00154175 /* BorderColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderColor.swift; sourceTree = "<group>"; };
+		76EE444D1D4BCD1800154175 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		76EF9C481D4BDA9400357E29 /* Document+update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+update.swift"; sourceTree = "<group>"; };
+		76EF9C4A1D4BDB4800357E29 /* Document+FormUpdates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Document+FormUpdates.swift"; sourceTree = "<group>"; };
+		76F1397B1D9086CA00BE24B5 /* DocumentTabViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentTabViewDelegate.swift; sourceTree = "<group>"; };
+		76F6EB4F1D67D015001AE134 /* Artifice Printing Support - Page Layours - 6-Up - Letter.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Artifice Printing Support - Page Layours - 6-Up - Letter.afdesign"; sourceTree = "<group>"; };
+		76FBDB751D63C34300AD0022 /* MultiCardPrintableView-Letter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MultiCardPrintableView-Letter.xib"; sourceTree = "<group>"; };
+		76FBDB771D641DF800AD0022 /* TransparentStandardTemplateCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransparentStandardTemplateCardView.xib; sourceTree = "<group>"; };
+		76FBDB791D64225500AD0022 /* TransparentStandardTemplateCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentStandardTemplateCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76EE44191D4BC7E400154175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		760C52991D7918D600A7D152 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76E106671D6699E300989A07 /* NSImage */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		7633EB8B1D71C4670068DDA8 /* Cocoatrice Export */ = {
+			isa = PBXGroup;
+			children = (
+				7633EB8C1D71C48F0068DDA8 /* Cockatrice Set Skeleton.xml */,
+			);
+			name = "Cocoatrice Export";
+			sourceTree = "<group>";
+		};
+		76405EBC1D4CF77A00B5CD40 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7633EB891D70219F0068DDA8 /* JaceBeleren-Bold.ttf */,
+				76405EC31D4CF7D500B5CD40 /* Phyrexian.ttf */,
+				76405EC21D4CF7BB00B5CD40 /* matrixb.ttf */,
+				76405EC01D4CF7B500B5CD40 /* beleren-bold-webfont.ttf */,
+				76405EC11D4CF7B500B5CD40 /* belerensmallcaps-bold-webfont.ttf */,
+				76405EBF1D4CF7A400B5CD40 /* relay-medium.ttf */,
+				76405EBE1D4CF79D00B5CD40 /* mplantinit.ttf */,
+				76405EBD1D4CF78E00B5CD40 /* mplantin.ttf */,
+				76C95AE11D7774A0003BB9D5 /* MPlaintin-Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		76432DAF1D6C24A1000A03E1 /* Miracle */ = {
+			isa = PBXGroup;
+			children = (
+				76432DB01D6C24C0000A03E1 /* MiracleTemplateCardView.xib */,
+				76432DB21D6C24D1000A03E1 /* MiracleTemplateCardView.swift */,
+			);
+			name = Miracle;
+			sourceTree = "<group>";
+		};
+		768193471D52B40400AB5FEA /* Graphical Masters */ = {
+			isa = PBXGroup;
+			children = (
+				768193521D52B46300AB5FEA /* Mana.svg */,
+				760C529C1D7A125F00A7D152 /* Energy Counter.afdesign */,
+				763F85831D78D06100C90BB8 /* Disk Image Icon.png */,
+				76C95AEC1D77CBD8003BB9D5 /* background.png */,
+				76C95AE31D7787B5003BB9D5 /* Disk Image Icon.afdesign */,
+				76C911F71D6E8EE100914B67 /* Toolbar Icons.pxm */,
+				76ABE39A1D7F7E8600955AC8 /* Master Template (Split Cards - 2015).afdesign */,
+				76F6EB4F1D67D015001AE134 /* Artifice Printing Support - Page Layours - 6-Up - Letter.afdesign */,
+				76A69BBD1D5868CE00C477CB /* Master Template (4-ability Planeswalker).afdesign */,
+				76A69BBE1D5868CE00C477CB /* Master Template (Planeswalker).afdesign */,
+				768193481D52B43000AB5FEA /* Master Template - Tokens (Full Art - 2015 Style).afdesign */,
+				768193491D52B43000AB5FEA /* Master Template - Tokens (2015 Style).afdesign */,
+				7681934A1D52B43000AB5FEA /* Master Template (Standard - 2015).afdesign */,
+				7681934B1D52B43000AB5FEA /* Master Template (Full Art Lands - 2015).afdesign */,
+				7681934C1D52B43000AB5FEA /* Master Template (Full Art Expedition Style - 2015).afdesign */,
+				7632E11B1D50524C008890BE /* Basic Land Mana Symbols.afdesign */,
+				7696D97D1D4C09EB00FD6226 /* Artifice Icon.afdesign */,
+			);
+			name = "Graphical Masters";
+			sourceTree = "<group>";
+		};
+		7696D97B1D4C086200FD6226 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				76A9AC431D5555940017E2DA /* CardView */,
+			);
+			name = CardView;
+			sourceTree = "<group>";
+		};
+		7696D97C1D4C086F00FD6226 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				76EE44231D4BC7E400154175 /* Document.xib */,
+				766534561D864F01008B851D /* ArtificeDocumentSavePanel.xib */,
+				766534581D865627008B851D /* ArtificeDocumentSavePanel.swift */,
+				76EE44211D4BC7E400154175 /* Document.swift */,
+				76EF9C481D4BDA9400357E29 /* Document+update.swift */,
+				760DB3271D4BD95F000E1C71 /* Document+CardsTable.swift */,
+				76EF9C4A1D4BDB4800357E29 /* Document+FormUpdates.swift */,
+				7606ECA91D6E533D00287618 /* Document+Menubar.swift */,
+				76EDFA8B1D85AC6400FCB353 /* SegmentedControlToolbarItem.swift */,
+				7633EB8D1D7515C10068DDA8 /* Document+SearchBar.swift */,
+				760C529A1D79278000A7D152 /* Document+setInfo.swift */,
+				76C95AF11D77D6E1003BB9D5 /* Statistics */,
+			);
+			name = Document;
+			sourceTree = "<group>";
+		};
+		76A69BB81D583E6000C477CB /* 4 Ability Planeswalker Template */ = {
+			isa = PBXGroup;
+			children = (
+				76A69BB91D583E8800C477CB /* Planeswalker4AbilityTemplateCardView.swift */,
+				76A69BBB1D583EAC00C477CB /* Planeswalker4AbilityTemplateCardView.xib */,
+			);
+			name = "4 Ability Planeswalker Template";
+			sourceTree = "<group>";
+		};
+		76A9AC431D5555940017E2DA /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				765447781D53D7AC0077385D /* CardView+ImageRepresentations.swift */,
+				76EE444D1D4BCD1800154175 /* CardView.swift */,
+			);
+			name = CardView;
+			sourceTree = "<group>";
+		};
+		76A9AC441D5555A10017E2DA /* Token Template */ = {
+			isa = PBXGroup;
+			children = (
+				7632E1151D4F009D008890BE /* TokenTemplateCardView.xib */,
+				7632E1131D4F0077008890BE /* TokenTemplateCardView.swift */,
+			);
+			name = "Token Template";
+			sourceTree = "<group>";
+		};
+		76A9AC451D5555AD0017E2DA /* Full Art Token Template */ = {
+			isa = PBXGroup;
+			children = (
+				7632E1191D4FEBCE008890BE /* FullArtTokenTemplateCardView.xib */,
+				7632E1171D4FEB97008890BE /* FullArtTokenTemplateCardView.swift */,
+			);
+			name = "Full Art Token Template";
+			sourceTree = "<group>";
+		};
+		76A9AC461D5555BB0017E2DA /* Standard Template */ = {
+			isa = PBXGroup;
+			children = (
+				7631C3451D4E98C300A1354E /* StandardTemplateCardView.xib */,
+				7641D7961D4E1F7B00502C5E /* StandardTemplateCardView.swift */,
+			);
+			name = "Standard Template";
+			sourceTree = "<group>";
+		};
+		76A9AC471D5555C30017E2DA /* Full Art Basic Land Template */ = {
+			isa = PBXGroup;
+			children = (
+				76A9AC411D5555490017E2DA /* FullArtBasicLandTemplateCardView.xib */,
+				76A9AC3F1D5552D50017E2DA /* FullArtBasicLandTemplateCardView.swift */,
+			);
+			name = "Full Art Basic Land Template";
+			sourceTree = "<group>";
+		};
+		76A9AC481D5586F60017E2DA /* Full Art Nonbasic Land Template */ = {
+			isa = PBXGroup;
+			children = (
+				76A9AC4B1D5587650017E2DA /* FullArtNonbasicLandTemplateCardView.xib */,
+				76A9AC491D5587180017E2DA /* FullArtNonbasicLandTemplateCardView.swift */,
+			);
+			name = "Full Art Nonbasic Land Template";
+			sourceTree = "<group>";
+		};
+		76A9AC4E1D5696180017E2DA /* Planeswalker Template */ = {
+			isa = PBXGroup;
+			children = (
+				76A9AC4F1D5696410017E2DA /* PlaneswalkerTemplateCardView.swift */,
+				76A9AC511D56ABCE0017E2DA /* PlaneswalkerTemplateCardView.xib */,
+			);
+			name = "Planeswalker Template";
+			sourceTree = "<group>";
+		};
+		76BAB0E71D7BD420000EE493 /* Split Card */ = {
+			isa = PBXGroup;
+			children = (
+				76BAB0E51D7BD41D000EE493 /* SplitCardTemplateCardView.swift */,
+				76BAB0E81D7BD45C000EE493 /* SplitCardTemplateCardView.xib */,
+			);
+			name = "Split Card";
+			sourceTree = "<group>";
+		};
+		76C95AE51D778DC4003BB9D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = Artifice;
+			sourceTree = "<group>";
+		};
+		76C95AF11D77D6E1003BB9D5 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				76009D131D76097C00903CFA /* Document+rarityStatistics.swift */,
+				76C95AF21D77DDEC003BB9D5 /* Document+typeStatistics.swift */,
+				76009D171D761DDA00903CFA /* Document+statistics.swift */,
+				76009D151D761A9400903CFA /* Document+colorStatistics.swift */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
+		76CFC5021D53BCB600A4B2E5 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				76CFC5031D53BCDF00A4B2E5 /* Text Codes.txt */,
+				765447771D53CC240077385D /* Basic Usage.txt */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		76E106631D663B8300989A07 /* Game Day Template */ = {
+			isa = PBXGroup;
+			children = (
+				76E106611D663B7D00989A07 /* GameDayTemplateCardView.swift */,
+				76E1065F1D663B6900989A07 /* GameDayTemplateCardView.xib */,
+			);
+			name = "Game Day Template";
+			sourceTree = "<group>";
+		};
+		76E106671D6699E300989A07 /* NSImage */ = {
+			isa = PBXGroup;
+			children = (
+				763F85851D78E45A00C90BB8 /* NSImage+zoomed.swift */,
+				766C565D1D80CE6B00C043CE /* NSImage+DPIConversion.h */,
+				766C565E1D80CE6B00C043CE /* NSImage+DPIConversion.m */,
+				7657C0AE1D82373A00E5E44C /* NSImage+DPIConversion.swift */,
+				76E106641D66999000989A07 /* NSImage+Rotated.h */,
+				76E106651D6699C700989A07 /* NSImage+Rotated.m */,
+			);
+			name = NSImage;
+			sourceTree = "<group>";
+		};
+		76E1066A1D669A8500989A07 /* MultiCardPrintableView-Letter */ = {
+			isa = PBXGroup;
+			children = (
+				76E106681D669A7900989A07 /* MultiCardPrintableView-Letter.swift */,
+				76FBDB751D63C34300AD0022 /* MultiCardPrintableView-Letter.xib */,
+				76E1066B1D66A15B00989A07 /* CardSet+Paginate.swift */,
+			);
+			name = "MultiCardPrintableView-Letter";
+			sourceTree = "<group>";
+		};
+		76EE44131D4BC7E400154175 = {
+			isa = PBXGroup;
+			children = (
+				76EE441E1D4BC7E400154175 /* Artifice */,
+				76C95AE51D778DC4003BB9D5 /* Frameworks */,
+				76EE441D1D4BC7E400154175 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76EE441D1D4BC7E400154175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76EE441C1D4BC7E400154175 /* Artifice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76EE441E1D4BC7E400154175 /* Artifice */ = {
+			isa = PBXGroup;
+			children = (
+				760C52991D7918D600A7D152 /* Extensions */,
+				76EE44371D4BC9E900154175 /* Delegates */,
+				76EE44341D4BC97E00154175 /* Models */,
+				76EE44321D4BC95C00154175 /* Views */,
+				76EE44381D4BCA3F00154175 /* Resources */,
+			);
+			path = Artifice;
+			sourceTree = "<group>";
+		};
+		76EE44321D4BC95C00154175 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76E1066A1D669A8500989A07 /* MultiCardPrintableView-Letter */,
+				7696D97C1D4C086F00FD6226 /* Document */,
+				7696D97B1D4C086200FD6226 /* CardView */,
+				76F6EB501D68D140001AE134 /* CardTemplateView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		76EE44341D4BC97E00154175 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76EE443F1D4BCB1500154175 /* Card.swift */,
+				76217CDF1D52801D007A208D /* Card+TextExport.swift */,
+				768DDE291D8CB983003C1925 /* TemplateImageCache.swift */,
+				76EE44431D4BCBD900154175 /* CardSet.swift */,
+				7657C0B01D8333E600E5E44C /* Keyword.swift */,
+				7657C0B41D8345E700E5E44C /* BuiltinKeywords.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		76EE44371D4BC9E900154175 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				76EE441F1D4BC7E400154175 /* AppDelegate.swift */,
+				7633EB911D7530BF0068DDA8 /* SearchFieldDelegate.swift */,
+				76F1397B1D9086CA00BE24B5 /* DocumentTabViewDelegate.swift */,
+				764BC44C1D5FA9680032AB0D /* CardNotesTextFieldDelegate.swift */,
+				764BC4381D5F8FC90032AB0D /* CardNameFieldDelegate.swift */,
+				764BC43A1D5F916C0032AB0D /* ManaCostFieldDelegate.swift */,
+				767DB4901D7D42A400792692 /* CardTypeFieldDelegate.swift */,
+				768193451D52873300AB5FEA /* RulesTextFieldDelegate.swift */,
+				764BC43E1D5F93760032AB0D /* FlavorTextFieldDelegate.swift */,
+				764BC4401D5F93DB0032AB0D /* ArtistFieldDelegate.swift */,
+				764BC4421D5F953F0032AB0D /* PowerFieldDelegate.swift */,
+				764BC4441D5F95940032AB0D /* ToughnessFieldDelegate.swift */,
+				764BC4481D5FA8D50032AB0D /* PromoTextFieldDelegate.swift */,
+				764BC44A1D5FA9240032AB0D /* DateOverlayTextFieldDelegate.swift */,
+				764BC44E1D5FA9BF0032AB0D /* SetCodeTextFieldDelegate.swift */,
+				764BC4501D5FAA100032AB0D /* CopyrightTextFieldDelegate.swift */,
+				764BC4521D5FB3500032AB0D /* PlaneswalkerAbility1CostTextFieldDelegate.swift */,
+				764BC4541D5FB8F80032AB0D /* PlaneswalkerAbility2CostTextFieldDelegate.swift */,
+				764BC4561D5FB9090032AB0D /* PlaneswalkerAbility3CostTextFieldDelegate.swift */,
+				764BC4581D5FB9160032AB0D /* PlaneswalkerAbility4CostTextFieldDelegate.swift */,
+				764BC45A1D5FB9A00032AB0D /* PlaneswalkerAbility1RulesTextFieldDelegate.swift */,
+				764BC45C1D5FB9CA0032AB0D /* PlaneswalkerAbility2RulesTextFieldDelegate.swift */,
+				764BC45E1D5FB9DD0032AB0D /* PlaneswalkerAbility3RulesTextFieldDelegate.swift */,
+				764BC4601D5FB9EB0032AB0D /* PlaneswalkerAbility4RulesTextFieldDelegate.swift */,
+				764BC4621D5FBAC20032AB0D /* PlaneswalkerStartingLoyaltyTextFieldDelegate.swift */,
+				767DB48C1D7D353300792692 /* SplitCardRightNameFieldDelegate.swift */,
+				767DB48E1D7D41AD00792692 /* SplitCardRightManaCostFieldDelegate.swift */,
+				764BC43C1D5F92B60032AB0D /* SplitCardTypeFieldDelegate.swift */,
+				76BAB0EA1D7D33C4000EE493 /* SplitCardRightRulesTextFieldDelegate.swift */,
+				767DB4941D7E3A0C00792692 /* SplitCardArtistFieldDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		76EE44381D4BCA3F00154175 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76C340081D811BDE0080EA17 /* fix_libs.sh */,
+				76C95AEA1D778F24003BB9D5 /* dsa_pub.pem */,
+				7633EB8B1D71C4670068DDA8 /* Cocoatrice Export */,
+				76CFC5021D53BCB600A4B2E5 /* Documentation */,
+				76405EBC1D4CF77A00B5CD40 /* Fonts */,
+				76C878C11D60F61F00D7AABC /* Artifice-Bridging-Header.h */,
+				763CBF0D1D517B8C00B2EC23 /* parseBodyText.swift */,
+				76D852181D87473E00BC05C7 /* parseManaCost.swift */,
+				7654477A1D546A6F0077385D /* SanitizeInput.swift */,
+				764BC4461D5FA5710032AB0D /* ReplaceManaText.swift */,
+				7696D97E1D4C287300FD6226 /* SortCards.swift */,
+				76EE44411D4BCB3300154175 /* CardTemplate.swift */,
+				76EE44491D4BCC8000154175 /* ColorFlags.swift */,
+				76EE444B1D4BCCBC00154175 /* BorderColor.swift */,
+				76EE44471D4BCC2C00154175 /* ExpansionSymbol.swift */,
+				76EE443B1D4BCAC800154175 /* ManaSymbol.swift */,
+				76EE44451D4BCBFC00154175 /* Language.swift */,
+				76EE44281D4BC7E400154175 /* MainMenu.xib */,
+				76283C4D1D4D799500E1F75C /* DocumentIcon.icns */,
+				76EE442B1D4BC7E400154175 /* Info.plist */,
+				76EE44391D4BCAB300154175 /* Assets.xcassets */,
+				76C95AEE1D77CBFD003BB9D5 /* ArtificeAppcast.xml */,
+				768193471D52B40400AB5FEA /* Graphical Masters */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		76F6EB501D68D140001AE134 /* CardTemplateView */ = {
+			isa = PBXGroup;
+			children = (
+				7641D7981D4E235700502C5E /* CardTemplateView.swift */,
+				76BAB0E71D7BD420000EE493 /* Split Card */,
+				76A9AC461D5555BB0017E2DA /* Standard Template */,
+				76432DAF1D6C24A1000A03E1 /* Miracle */,
+				76FBDB7B1D64225F00AD0022 /* Transparent Standard Template */,
+				76E106631D663B8300989A07 /* Game Day Template */,
+				76A69BB81D583E6000C477CB /* 4 Ability Planeswalker Template */,
+				76A9AC4E1D5696180017E2DA /* Planeswalker Template */,
+				76A9AC481D5586F60017E2DA /* Full Art Nonbasic Land Template */,
+				76A9AC441D5555A10017E2DA /* Token Template */,
+				76A9AC451D5555AD0017E2DA /* Full Art Token Template */,
+				76A9AC471D5555C30017E2DA /* Full Art Basic Land Template */,
+			);
+			name = CardTemplateView;
+			sourceTree = "<group>";
+		};
+		76FBDB7B1D64225F00AD0022 /* Transparent Standard Template */ = {
+			isa = PBXGroup;
+			children = (
+				76FBDB771D641DF800AD0022 /* TransparentStandardTemplateCardView.xib */,
+				76FBDB791D64225500AD0022 /* TransparentStandardTemplateCardView.swift */,
+			);
+			name = "Transparent Standard Template";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76EE441B1D4BC7E400154175 /* Artifice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76EE442E1D4BC7E400154175 /* Build configuration list for PBXNativeTarget "Artifice" */;
+			buildPhases = (
+				76EE44181D4BC7E400154175 /* Sources */,
+				762DBFF21D80E155007DCFCA /* Copy Libraries and Frameworks */,
+				76EE441A1D4BC7E400154175 /* Resources */,
+				76EE44191D4BC7E400154175 /* Frameworks */,
+				764A9B661D81367500F6EE3E /* Fix ImageMagick Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Artifice;
+			productName = Artifice;
+			productReference = 76EE441C1D4BC7E400154175 /* Artifice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76EE44141D4BC7E400154175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Kyle Cardoza";
+				TargetAttributes = {
+					76EE441B1D4BC7E400154175 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HJRK92J374;
+						DevelopmentTeamName = "Kyle Cardoza (Personal Team)";
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 76EE44171D4BC7E400154175 /* Build configuration list for PBXProject "Artifice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76EE44131D4BC7E400154175;
+			productRefGroup = 76EE441D1D4BC7E400154175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76EE441B1D4BC7E400154175 /* Artifice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76EE441A1D4BC7E400154175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76283C4E1D4D799500E1F75C /* DocumentIcon.icns in Resources */,
+				76A9AC421D5555490017E2DA /* FullArtBasicLandTemplateCardView.xib in Resources */,
+				76217CD91D5268D6007A208D /* matrixb.ttf in Resources */,
+				76A69BB71D57D63F00C477CB /* Phyrexian.ttf in Resources */,
+				76EE44251D4BC7E400154175 /* Document.xib in Resources */,
+				766534571D864F01008B851D /* ArtificeDocumentSavePanel.xib in Resources */,
+				76217CDC1D5268D6007A208D /* relay-medium.ttf in Resources */,
+				76BAB0E91D7BD45C000EE493 /* SplitCardTemplateCardView.xib in Resources */,
+				7632E11A1D4FEBCE008890BE /* FullArtTokenTemplateCardView.xib in Resources */,
+				76E106601D663B6900989A07 /* GameDayTemplateCardView.xib in Resources */,
+				76A69BBC1D583EAC00C477CB /* Planeswalker4AbilityTemplateCardView.xib in Resources */,
+				76FBDB761D63C34300AD0022 /* MultiCardPrintableView-Letter.xib in Resources */,
+				76EE443A1D4BCAB300154175 /* Assets.xcassets in Resources */,
+				7631C3461D4E98C300A1354E /* StandardTemplateCardView.xib in Resources */,
+				76C95AEB1D778F24003BB9D5 /* dsa_pub.pem in Resources */,
+				76FBDB781D641DF800AD0022 /* TransparentStandardTemplateCardView.xib in Resources */,
+				76217CDD1D5268D6007A208D /* mplantinit.ttf in Resources */,
+				76217CDE1D5268D6007A208D /* mplantin.ttf in Resources */,
+				76432DB11D6C24C0000A03E1 /* MiracleTemplateCardView.xib in Resources */,
+				76217CDA1D5268D6007A208D /* beleren-bold-webfont.ttf in Resources */,
+				76EE442A1D4BC7E400154175 /* MainMenu.xib in Resources */,
+				76A9AC521D56ABCE0017E2DA /* PlaneswalkerTemplateCardView.xib in Resources */,
+				7632E1161D4F009D008890BE /* TokenTemplateCardView.xib in Resources */,
+				76A9AC4D1D558EEA0017E2DA /* FullArtNonbasicLandTemplateCardView.xib in Resources */,
+				7633EB8A1D7021A90068DDA8 /* JaceBeleren-Bold.ttf in Resources */,
+				76217CDB1D5268D6007A208D /* belerensmallcaps-bold-webfont.ttf in Resources */,
+				76C95AE21D7774A0003BB9D5 /* MPlaintin-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		764A9B661D81367500F6EE3E /* Fix ImageMagick Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fix ImageMagick Libraries";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "EXECFILE=${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\nLIBPATH=${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\nNEWLIBPATH=\"@executable_path/../Frameworks\"\n\ninstall_name_tool -id \"@executable_path/../Frameworks/libMagickCore-7.Q16HDRI.3.dylib\" \"${LIBPATH}/libMagickCore-7.Q16HDRI.3.dylib\"\n\ninstall_name_tool -change \"/usr/local/lib/libMagickCore-7.Q16HDRI.3.dylib\" \"@executable_path/../Frameworks/libMagickCore-7.Q16HDRI.3.dylib\" \"${LIBPATH}/libMagickWand-7.Q16HDRI.3.dylib\"\n\ninstall_name_tool -id \"@executable_path/../Frameworks/libMagickWand-7.Q16HDRI.3.dylib\" \"${LIBPATH}/libMagickWand-7.Q16HDRI.3.dylib\"\n\ninstall_name_tool -change \"/usr/local/lib/libMagickCore-7.Q16HDRI.3.dylib\" \"@executable_path/../Frameworks/libMagickCore-7.Q16HDRI.3.dylib\" \"${EXECFILE}\"\n\ninstall_name_tool -change \"/usr/local/lib/libMagickWand-7.Q16HDRI.3.dylib\" \"@executable_path/../Frameworks/libMagickWand-7.Q16HDRI.3.dylib\" \"${EXECFILE}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76EE44181D4BC7E400154175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7655C8FC1FA59A37001E1375 /* NSImage+DPIConversion.swift in Sources */,
+				76E6AAD21D82163700DB1C0D /* MiracleTemplateCardView.swift in Sources */,
+				767DB48D1D7D353300792692 /* SplitCardRightNameFieldDelegate.swift in Sources */,
+				764BC4511D5FAA100032AB0D /* CopyrightTextFieldDelegate.swift in Sources */,
+				767DB48F1D7D41AD00792692 /* SplitCardRightManaCostFieldDelegate.swift in Sources */,
+				764BC44D1D5FA9680032AB0D /* CardNotesTextFieldDelegate.swift in Sources */,
+				760DB3281D4BD95F000E1C71 /* Document+CardsTable.swift in Sources */,
+				767DB4951D7E3A0C00792692 /* SplitCardArtistFieldDelegate.swift in Sources */,
+				7606ECAA1D6E533D00287618 /* Document+Menubar.swift in Sources */,
+				76EE443C1D4BCAC800154175 /* ManaSymbol.swift in Sources */,
+				76EF9C4B1D4BDB4800357E29 /* Document+FormUpdates.swift in Sources */,
+				764BC4531D5FB3500032AB0D /* PlaneswalkerAbility1CostTextFieldDelegate.swift in Sources */,
+				763CBF0E1D517B8C00B2EC23 /* parseBodyText.swift in Sources */,
+				76EE444C1D4BCCBC00154175 /* BorderColor.swift in Sources */,
+				7657C0B11D8333E600E5E44C /* Keyword.swift in Sources */,
+				76EE44221D4BC7E400154175 /* Document.swift in Sources */,
+				764BC43F1D5F93760032AB0D /* FlavorTextFieldDelegate.swift in Sources */,
+				764BC45B1D5FB9A00032AB0D /* PlaneswalkerAbility1RulesTextFieldDelegate.swift in Sources */,
+				764BC4431D5F953F0032AB0D /* PowerFieldDelegate.swift in Sources */,
+				76C95AF31D77DDEC003BB9D5 /* Document+typeStatistics.swift in Sources */,
+				7641D7991D4E235700502C5E /* CardTemplateView.swift in Sources */,
+				7632E1141D4F0077008890BE /* TokenTemplateCardView.swift in Sources */,
+				76EE444A1D4BCC8000154175 /* ColorFlags.swift in Sources */,
+				7657C0B51D8345E700E5E44C /* BuiltinKeywords.swift in Sources */,
+				76EE44441D4BCBD900154175 /* CardSet.swift in Sources */,
+				76009D141D76097C00903CFA /* Document+rarityStatistics.swift in Sources */,
+				764BC4491D5FA8D50032AB0D /* PromoTextFieldDelegate.swift in Sources */,
+				76BAB0EB1D7D33C4000EE493 /* SplitCardRightRulesTextFieldDelegate.swift in Sources */,
+				76EE44421D4BCB3300154175 /* CardTemplate.swift in Sources */,
+				76EF9C491D4BDA9400357E29 /* Document+update.swift in Sources */,
+				764BC44F1D5FA9BF0032AB0D /* SetCodeTextFieldDelegate.swift in Sources */,
+				7632E1181D4FEB97008890BE /* FullArtTokenTemplateCardView.swift in Sources */,
+				764BC4391D5F8FC90032AB0D /* CardNameFieldDelegate.swift in Sources */,
+				764BC4631D5FBAC20032AB0D /* PlaneswalkerStartingLoyaltyTextFieldDelegate.swift in Sources */,
+				7654477C1D546BC50077385D /* SanitizeInput.swift in Sources */,
+				768DDE2A1D8CB983003C1925 /* TemplateImageCache.swift in Sources */,
+				76FBDB7A1D64225500AD0022 /* TransparentStandardTemplateCardView.swift in Sources */,
+				76E106621D663B7D00989A07 /* GameDayTemplateCardView.swift in Sources */,
+				7633EB921D7530BF0068DDA8 /* SearchFieldDelegate.swift in Sources */,
+				76E1066C1D66A15B00989A07 /* CardSet+Paginate.swift in Sources */,
+				76217CE01D52801D007A208D /* Card+TextExport.swift in Sources */,
+				7655C8FE1FA59A3C001E1375 /* NSImage+Rotated.m in Sources */,
+				767DB4911D7D42A400792692 /* CardTypeFieldDelegate.swift in Sources */,
+				7633EB8E1D7515C10068DDA8 /* Document+SearchBar.swift in Sources */,
+				76A9AC401D5552D50017E2DA /* FullArtBasicLandTemplateCardView.swift in Sources */,
+				764BC43B1D5F916C0032AB0D /* ManaCostFieldDelegate.swift in Sources */,
+				76EE44481D4BCC2C00154175 /* ExpansionSymbol.swift in Sources */,
+				764BC4591D5FB9160032AB0D /* PlaneswalkerAbility4CostTextFieldDelegate.swift in Sources */,
+				766534591D865627008B851D /* ArtificeDocumentSavePanel.swift in Sources */,
+				76EE44461D4BCBFC00154175 /* Language.swift in Sources */,
+				764BC4451D5F95940032AB0D /* ToughnessFieldDelegate.swift in Sources */,
+				764BC4571D5FB9090032AB0D /* PlaneswalkerAbility3CostTextFieldDelegate.swift in Sources */,
+				76EE44201D4BC7E400154175 /* AppDelegate.swift in Sources */,
+				7655C8FB1FA59A33001E1375 /* NSImage+DPIConversion.m in Sources */,
+				764BC45F1D5FB9DD0032AB0D /* PlaneswalkerAbility3RulesTextFieldDelegate.swift in Sources */,
+				76EDFA8C1D85AC6400FCB353 /* SegmentedControlToolbarItem.swift in Sources */,
+				763F85861D78E45A00C90BB8 /* NSImage+zoomed.swift in Sources */,
+				7696D97F1D4C287300FD6226 /* SortCards.swift in Sources */,
+				76A9AC501D5696410017E2DA /* PlaneswalkerTemplateCardView.swift in Sources */,
+				764BC4411D5F93DB0032AB0D /* ArtistFieldDelegate.swift in Sources */,
+				76E106691D669A7900989A07 /* MultiCardPrintableView-Letter.swift in Sources */,
+				760C529B1D79278000A7D152 /* Document+setInfo.swift in Sources */,
+				76D852191D87473E00BC05C7 /* parseManaCost.swift in Sources */,
+				76009D181D761DDA00903CFA /* Document+statistics.swift in Sources */,
+				76BAB0E61D7BD41D000EE493 /* SplitCardTemplateCardView.swift in Sources */,
+				76009D161D761A9400903CFA /* Document+colorStatistics.swift in Sources */,
+				768193461D52873300AB5FEA /* RulesTextFieldDelegate.swift in Sources */,
+				764BC4611D5FB9EB0032AB0D /* PlaneswalkerAbility4RulesTextFieldDelegate.swift in Sources */,
+				76A9AC4C1D558EE30017E2DA /* FullArtNonbasicLandTemplateCardView.swift in Sources */,
+				76EE444E1D4BCD1800154175 /* CardView.swift in Sources */,
+				764BC43D1D5F92B60032AB0D /* SplitCardTypeFieldDelegate.swift in Sources */,
+				764BC4551D5FB8F80032AB0D /* PlaneswalkerAbility2CostTextFieldDelegate.swift in Sources */,
+				7641D7971D4E1F7B00502C5E /* StandardTemplateCardView.swift in Sources */,
+				76A69BBA1D583E8800C477CB /* Planeswalker4AbilityTemplateCardView.swift in Sources */,
+				765447791D53D7AC0077385D /* CardView+ImageRepresentations.swift in Sources */,
+				76F1397C1D9086CA00BE24B5 /* DocumentTabViewDelegate.swift in Sources */,
+				764BC45D1D5FB9CA0032AB0D /* PlaneswalkerAbility2RulesTextFieldDelegate.swift in Sources */,
+				76EE44401D4BCB1500154175 /* Card.swift in Sources */,
+				764BC44B1D5FA9240032AB0D /* DateOverlayTextFieldDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		76EE44231D4BC7E400154175 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76EE44241D4BC7E400154175 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		76EE44281D4BC7E400154175 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76EE44291D4BC7E400154175 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76EE442C1D4BC7E400154175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+			};
+			name = Debug;
+		};
+		76EE442D1D4BC7E400154175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+			};
+			name = Release;
+		};
+		76EE442F1D4BC7E400154175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = "";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_INCREMENTAL_DISTILL = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Artifice",
+				);
+				HEADER_SEARCH_PATHS = "\"/usr/local/include/ImageMagick-7\"/**";
+				IBC_ERRORS = YES;
+				IBC_NOTICES = YES;
+				IBC_WARNINGS = NO;
+				INFOPLIST_FILE = Artifice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/Cellar/imagemagick/7.0.6-5_2/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.KyleCardoza.Artifice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Artifice/Artifice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		76EE44301D4BC7E400154175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = "";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_INCREMENTAL_DISTILL = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Artifice",
+				);
+				HEADER_SEARCH_PATHS = "\"/usr/local/include/ImageMagick-7\"/**";
+				IBC_ERRORS = YES;
+				IBC_NOTICES = YES;
+				IBC_WARNINGS = NO;
+				INFOPLIST_FILE = Artifice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/Cellar/imagemagick/7.0.6-5_2/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.KyleCardoza.Artifice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Artifice/Artifice-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76EE44171D4BC7E400154175 /* Build configuration list for PBXProject "Artifice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76EE442C1D4BC7E400154175 /* Debug */,
+				76EE442D1D4BC7E400154175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76EE442E1D4BC7E400154175 /* Build configuration list for PBXNativeTarget "Artifice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76EE442F1D4BC7E400154175 /* Debug */,
+				76EE44301D4BC7E400154175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76EE44141D4BC7E400154175 /* Project object */;
+}

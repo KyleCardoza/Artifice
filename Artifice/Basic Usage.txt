@@ -1,0 +1,34 @@
+Basic Usage
+The interface to Artifice is fairly self-explanatory, but to get started,
+you can add and remove cards to and from a set by clicking the + and - buttons
+below the set view table in the upper right section of the editor window.
+
+Edits to a card's data will be applied to the card when you deselect the field
+being edited; this will also cause the card to be re-rendered.
+
+When adding art to your card design, you currently have to crop it to the
+appropriate aspect ratio in the image editing application of your choice.
+Each template requires a different aspect ratio:
+
+ - The standard template requires a ratio of 4:3 (e.g. 400x300, 800x600, etc)
+ - The token template without rules text requires a ratio of
+   4:4.6 (e.g. 400x460, 1200x1380, etc)
+ - The token template with rules text requires a ratio of 4:3.5 (e.g.
+   400x350, 800x700, etc.)
+
+Any image resolution is acceptable, so long as the aspect ratio is correct.
+Obviously, the higher your image quality, the better the card will look, but
+you probably already know that!
+
+The usual save/open menu items are available; card art is preserved in the saved
+set file, so no other files are necessary to share your set with other users.
+Additionally, you can export a card to a print-quality PDF from the File menu;
+for now, exporting to PNG must be done from within Preview or the other
+application of your choice, but selectable-resolution PNG export is on the
+list of features to be added in future versions of Artifice, along with
+exporting an entire set in one go.
+
+The three tabs of the editor each serve a different function: the "Card Info"
+tab is for editing data for individual cards that almost all cards will need;
+the "Card Extras" tab contains card-specific information that is less commonly
+used; and the "Set Info" tab lets you edit information about the set as a whole.

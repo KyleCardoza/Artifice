@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Artifice" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutWindow" destination="xCx-3w-slz" id="eyD-UU-dHn"/>
+                <outlet property="aboutWindowTabSelector" destination="YVV-H0-xvj" id="XEl-Ac-X6u"/>
+                <outlet property="aboutWindowTabView" destination="ceb-K6-DbF" id="PaV-K2-llq"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="XAa-4V-ajZ" customClass="SUUpdater"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="Artifice" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Artifice" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About Artifice" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showAboutWindow:" target="Voe-Tx-rLC" id="Fgh-x2-epM"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="hBk-tU-pvd"/>
+                            <menuItem title="Check for Updates…" id="spL-DG-OY5">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="XAa-4V-ajZ" id="e5C-pN-cEX"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide Artifice" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit Artifice" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="dMs-cI-mzQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="bib-Uj-vzu">
+                        <items>
+                            <menuItem title="New" tag="-1" keyEquivalent="n" id="Was-JA-tGl">
+                                <connections>
+                                    <action selector="newDocument:" target="-1" id="4Si-XN-c54"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open…" tag="-1" keyEquivalent="o" id="IAo-SY-fd9">
+                                <connections>
+                                    <action selector="openDocument:" target="-1" id="bVn-NM-KNZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open Recent" id="tXI-mr-wws">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Open Recent" systemMenu="recentDocuments" id="oas-Oc-fiZ">
+                                    <items>
+                                        <menuItem title="Clear Menu" tag="-1" id="vNY-rz-j42">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="clearRecentDocuments:" target="-1" id="Daa-9d-B3U"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
+                            <menuItem title="Close" tag="-1" keyEquivalent="w" id="DVo-aG-piG">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="HmO-Ls-i7Q"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save…" tag="-1" keyEquivalent="s" id="pxx-59-PXV">
+                                <connections>
+                                    <action selector="saveDocument:" target="-1" id="teZ-XB-qJY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Save As…" tag="-1" keyEquivalent="S" id="Bw7-FT-i3A">
+                                <connections>
+                                    <action selector="saveDocumentAs:" target="-1" id="mDf-zr-I0C"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Revert to Saved" tag="-1" keyEquivalent="r" id="KaW-ft-85H">
+                                <connections>
+                                    <action selector="revertDocumentToSaved:" target="-1" id="iJ3-Pv-kwq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="7Yj-se-UdJ"/>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="UJR-Ft-cZt">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Edit" id="w1y-ko-GER">
+                        <items>
+                            <menuItem title="Undo" keyEquivalent="z" id="AjO-8Y-MBF">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="b2H-cC-3ts"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Redo" keyEquivalent="Z" id="0Cc-Ny-4Lu">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="e70-Su-jzd"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="KhQ-XM-hGo"/>
+                            <menuItem title="Cut" keyEquivalent="x" id="l5Y-3H-ft7">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="OHH-gc-JgV"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="5GE-Co-zfk">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="IE6-BZ-WjP"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="s7o-yd-0bA">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="9UT-cK-XFj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="aOW-iu-vmf">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="BMl-HE-wS5"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="KQb-yl-m7N"/>
+                            <menuItem title="Spelling and Grammar" id="Dsm-f8-Q2y">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Spelling" id="chJ-lE-9hu">
+                                    <items>
+                                        <menuItem title="Show Spelling and Grammar" keyEquivalent=":" id="Veg-Hg-Jk2">
+                                            <connections>
+                                                <action selector="showGuessPanel:" target="-1" id="faB-BX-1Nf"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Check Document Now" keyEquivalent=";" id="id2-X8-H4D">
+                                            <connections>
+                                                <action selector="checkSpelling:" target="-1" id="8Yk-xt-iaS"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="OW6-QS-gli"/>
+                                        <menuItem title="Check Spelling While Typing" id="MX6-rN-wfK">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleContinuousSpellChecking:" target="-1" id="Zjz-d4-y99"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Check Grammar With Spelling" id="IiI-Q7-pHJ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleGrammarChecking:" target="-1" id="NHi-iu-Hyg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Correct Spelling Automatically" id="pXi-Vl-Mcn">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticSpellingCorrection:" target="-1" id="dAI-Ps-qmk"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Substitutions" id="W5E-ab-hWb">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Substitutions" id="kmh-2t-oqb">
+                                    <items>
+                                        <menuItem title="Show Substitutions" id="0g4-0N-rpO">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontSubstitutionsPanel:" target="-1" id="5Gw-dV-dx5"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="pS6-oU-7fR"/>
+                                        <menuItem title="Smart Copy/Paste" id="7XJ-pn-73G">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleSmartInsertDelete:" target="-1" id="lcQ-B3-CXS"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Smart Quotes" id="i5l-Rz-VRV">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticQuoteSubstitution:" target="-1" id="Lxc-L8-eAT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Smart Dashes" id="Ej2-mb-gkK">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticDashSubstitution:" target="-1" id="dj5-qm-k3e"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Smart Links" id="MOc-NS-dpy">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticLinkDetection:" target="-1" id="e3A-yl-1WK"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Data Detectors" id="Raz-B2-bQp">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticDataDetection:" target="-1" id="Pq7-ef-jiU"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Text Replacement" id="1M3-5F-fUg">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="toggleAutomaticTextReplacement:" target="-1" id="gfL-ps-B5G"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Transformations" id="Jft-qC-UuZ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Transformations" id="Dtm-Yq-RAb">
+                                    <items>
+                                        <menuItem title="Make Upper Case" id="oUc-Xx-lVB">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="uppercaseWord:" target="-1" id="FLD-eS-Kjh"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Make Lower Case" id="cyB-gR-RGd">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="lowercaseWord:" target="-1" id="yrU-Uk-9PQ"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Capitalize" id="jVH-79-2ti">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="capitalizeWord:" target="-1" id="TZH-O4-Ayh"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Speech" id="e8l-Y2-YEg">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Speech" id="Npe-am-0hS">
+                                    <items>
+                                        <menuItem title="Start Speaking" id="psd-ue-zyR">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="startSpeaking:" target="-1" id="GTT-vP-vH0"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Stop Speaking" id="37b-Gc-buV">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="stopSpeaking:" target="-1" id="won-Zt-ieS"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Card" id="0SM-q2-GYD">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Card" id="RKv-UU-pu2">
+                        <items>
+                            <menuItem title="New Card" tag="50" keyEquivalent="N" id="QGc-hq-FIz">
+                                <connections>
+                                    <action selector="addCard:" target="-1" id="E9m-Vw-GxL"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Duplicate Card" tag="1" keyEquivalent="d" id="Mg2-H6-1i0">
+                                <connections>
+                                    <action selector="duplicateSelectedCardButtonClicked:" target="-1" id="6TV-LF-sMc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete Card" tag="2" id="udD-E5-Wcx">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
+                                <connections>
+                                    <action selector="deleteCard:" target="-1" id="daD-58-KA9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="qtM-Rz-Mbv"/>
+                            <menuItem title="Increase Body Text Size" tag="3" keyEquivalent="=" id="vFm-BL-7uH">
+                                <connections>
+                                    <action selector="increaseFontSizeButtonClicked:" target="-1" id="BYB-fN-wGx"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Decrease Body Text Size" tag="4" keyEquivalent="-" id="zhg-sy-mO3">
+                                <connections>
+                                    <action selector="decreaseFontSizeButtonClicked:" target="-1" id="e0l-89-t0z"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Default Body Text Size" tag="5" keyEquivalent="0" id="TmI-9e-YOn">
+                                <connections>
+                                    <action selector="resetFontSizeButtonClicked:" target="-1" id="OvH-08-V9I"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Center Align Body Text" tag="56" id="17e-20-KoB">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cardMenuCenterBodyTextMenuItemClicked:" target="-1" id="NHw-CR-pYq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="rc9-Xr-PzG"/>
+                            <menuItem title="Clear Watermark" tag="53" id="ZPq-rM-fDF">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="clearWatermarkButtonClicked:" target="-1" id="Iwa-8W-BSY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Clear Custom Expansion Symbol" tag="54" id="8AQ-6o-eLG">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="clearCardExpansionSymbolButtonClicked:" target="-1" id="mDb-Fs-w8v"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="tRC-qH-NF6"/>
+                            <menuItem title="Enable Color Indicator" tag="22" id="Y8N-xi-Y3Q">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cardMenuColorIndicatorItemClicked:" target="-1" id="wmf-5f-7Oz"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Enable Large Mana Symbol" tag="21" id="Z5P-1H-BXY">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cardMenuLargeManaSymbolItemClicked:" target="-1" id="rDd-aU-hLc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Card Enters the Battlefield Tapped" tag="47" id="18X-ZM-q12">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="cardMenuEtbTappedClicked:" target="-1" id="9GL-yF-nwF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Rarity" id="V8D-xF-wPe">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Rarity" id="9lP-r8-dAL">
+                                    <items>
+                                        <menuItem title="Common" tag="8" id="egs-pW-YDr">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="nEz-5H-5XH"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Uncommon" tag="9" id="lBL-b7-R7d">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="Cj0-hV-Oet"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Rare" tag="10" id="ihs-Hd-vOZ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="WSK-kS-SKU"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Mythic Rare" tag="11" id="1LT-0Y-jzr">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="cUy-gG-ukW"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Basic Land" tag="12" id="idz-Pb-YYm">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="Ii7-Xg-Ii1"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Special" tag="13" id="sel-f2-mWe">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="Z03-o5-96R"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Promo" tag="14" id="k0q-hO-5xE">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="MIJ-Y2-qKX"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Token" tag="15" id="vry-49-rW3">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="EjH-jh-Ggk"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Bonus" tag="16" id="CWz-wS-P9L">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuRarityItemClicked:" target="-1" id="1e7-S1-wUf"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Template" id="v6m-5j-X0F">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Template" id="19p-Dw-l5y">
+                                    <items>
+                                        <menuItem title="Standard" tag="23" id="Yao-2z-NGs">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="68Z-FQ-xcK"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Token" tag="24" id="vWk-43-RoG">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="NS0-GC-kEW"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Full-Art Token" tag="25" id="BS8-HU-jWY">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="Ao9-Nd-jsD"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Full-Art Basic Land" tag="26" id="DjD-5S-P9J">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="v0G-9s-OYX"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Full-Art Nonbasic Land" tag="27" id="unH-7A-rQS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="Pf2-ba-WKT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Planeswalker" tag="28" id="NqY-p1-9rN">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="gOi-VA-VG4"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Planeswalker (4 Abilities)" tag="29" id="mfU-JM-IYD">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="Sfr-mP-67S"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Transparent Standard" tag="30" id="ZFX-Tm-eUh">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="X47-ZV-ZtI"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Transparent Promo" tag="31" id="Wqz-y2-axj">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="jUu-4N-0UI"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Miracle" tag="32" id="pxX-bD-eoI">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="Riu-G4-TVO"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Split" tag="55" id="GEe-V8-wRd">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuTemplateItemClicked:" target="-1" id="4D6-5s-QFl"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Border Color" id="daV-qj-N0Y">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Border Color" id="cnp-og-3Rf">
+                                    <items>
+                                        <menuItem title="Black" tag="17" id="43T-eQ-KG1">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuBorderItemClicked:" target="-1" id="dlf-f4-DGf"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="White" tag="18" id="eoN-Lz-O12">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuBorderItemClicked:" target="-1" id="zY1-ry-a6e"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Silver" tag="19" id="x7Y-PH-RR3">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuBorderItemClicked:" target="-1" id="qUq-45-P53"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Gold" tag="20" id="Vxj-Df-aun">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="cardMenuBorderItemClicked:" target="-1" id="kRk-7U-hRl"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="hk7-2o-aDQ"/>
+                            <menuItem title="Export Card" id="KNO-c7-YRc">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Export Card" id="Erg-Ga-eg6">
+                                    <items>
+                                        <menuItem title="Export as PDF…" tag="6" id="828-nN-wKS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportCurrentCardToPDF:" target="-1" id="Mfh-Gt-ggR"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export as PNG..." tag="7" keyEquivalent="e" id="Dmt-xH-Vc1">
+                                            <connections>
+                                                <action selector="exportCurrentCardToPNG:" target="-1" id="v5G-iA-Kkm"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Set" id="KdO-hY-GVj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Set" id="snz-dC-tWf">
+                        <items>
+                            <menuItem title="Set Info…" tag="52" keyEquivalent="i" id="B1p-Es-y4c">
+                                <connections>
+                                    <action selector="displaySetInfoSheet:" target="-1" id="jvE-hQ-UPj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Statistics…" tag="51" keyEquivalent="I" id="cFi-4B-hve">
+                                <connections>
+                                    <action selector="displayStatisticsSheet:" target="-1" id="As3-nN-ORJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="M3f-rK-lxp"/>
+                            <menuItem title="Hide Expansion Symbol" tag="46" id="tC0-Ms-vk3">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="setMenuHideExpansionSymbolClicked:" target="-1" id="3jK-oi-FfD"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reset All Promo Text" tag="49" id="W72-pO-goR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="setMenuResetPromoTextItemClicked:" target="-1" id="8ZV-Ov-c5X"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Default Border Color" id="pbn-Pm-yPL">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Default Border Color" id="Mod-52-feV">
+                                    <items>
+                                        <menuItem title="Black" tag="42" id="2EA-4v-Iw6">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setMenuBorderColorItemClicked:" target="-1" id="bSN-ma-C59"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="White" tag="43" id="mFj-YR-rUc">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setMenuBorderColorItemClicked:" target="-1" id="TuF-5Z-JKG"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Silver" tag="44" id="c2B-FJ-QYG">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setMenuBorderColorItemClicked:" target="-1" id="1FL-wR-V1h"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Gold" tag="45" id="mhc-1a-iYZ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setMenuBorderColorItemClicked:" target="-1" id="Qva-ac-XcY"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="40B-h5-wK5"/>
+                            <menuItem title="Export Resolution" id="Sxx-mL-5IX">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Export Resolution" id="k5v-AA-7DM">
+                                    <items>
+                                        <menuItem title="150dpi" tag="34" id="Zll-ht-Mzb">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setMenuExportResolutionItemClicked:" target="-1" id="yhn-vG-cDW"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="300dpi" tag="35" id="ZWd-pf-Pj5">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setMenuExportResolutionItemClicked:" target="-1" id="B10-2y-xwp"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="600dpi" tag="36" id="Q7c-QK-lVy">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="setMenuExportResolutionItemClicked:" target="-1" id="ray-8P-p4T"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Export Set" id="6uZ-bq-Wma">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Export Set" id="GGU-gk-Fze">
+                                    <items>
+                                        <menuItem title="Export as Paged PDF…" tag="38" id="qyU-fq-UiY">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportSetToPagedPDF:" target="-1" id="g9d-Jv-SWT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export as Individual PDF Files…" tag="39" id="2x6-LA-jOs">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportSetToPDF:" target="-1" id="jaP-Xx-Ogk"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export as PNG…" tag="40" id="3e4-P9-EHf">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportSetToPNG:" target="-1" id="Nl7-10-jce"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export as Gatherer Spoiler…" tag="41" id="WgI-e2-A7x">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportCurrentSetToGathererText:" target="-1" id="c80-4s-346"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export as Cockatrice Custom Set…" tag="48" id="KEh-NF-VB8">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="exportCurrentSetToCockatriceCustomSet:" target="-1" id="xf3-p7-36N"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="aUF-d1-5bR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="VwT-WD-YPe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="DIl-cC-cCs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                            <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="DRN-fu-gQh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="wpr-3q-Mcd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                        <items>
+                            <menuItem title="Artifice Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="139" y="267"/>
+        </menu>
+        <window title="About Artifice" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="xCx-3w-slz">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="131" y="158" width="637" height="222"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <value key="minSize" type="size" width="637" height="222"/>
+            <value key="maxSize" type="size" width="637" height="222"/>
+            <view key="contentView" id="zVM-Jl-dM8">
+                <rect key="frame" x="0.0" y="0.0" width="637" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tabView drawsBackground="NO" type="noTabsNoBorder" initialItem="CUA-z0-wr5" translatesAutoresizingMaskIntoConstraints="NO" id="ceb-K6-DbF" userLabel="Tabs">
+                        <rect key="frame" x="0.0" y="0.0" width="637" height="222"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="About" identifier="1" id="CUA-z0-wr5" userLabel="About Tab">
+                                <view key="view" id="5bR-Ca-hF7">
+                                    <rect key="frame" x="0.0" y="0.0" width="637" height="222"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PQ0-DR-uUF">
+                                            <rect key="frame" x="46" y="10" width="163" height="182"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="182" id="6qY-9f-8Z0"/>
+                                                <constraint firstAttribute="width" constant="163" id="Gbc-IH-a7A"/>
+                                            </constraints>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Artifice Logo" id="3bX-dL-So1"/>
+                                        </imageView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y0n-PQ-58X">
+                                            <rect key="frame" x="315" y="120" width="185" height="75"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Artifice" id="BoB-aR-X7H">
+                                                <font key="font" size="54" name="Georgia"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jcx-EY-D4G">
+                                            <rect key="frame" x="247" y="103" width="321" height="25"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="A Card Game Creation Tool for Mac" id="bAF-AW-LDt">
+                                                <font key="font" size="20" name="Helvetica"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-7q-EZi">
+                                            <rect key="frame" x="273" y="20" width="269" height="14"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Copyright © 2016 Kyle J Cardoza. All rights reserved." id="Ifd-AG-5Ir">
+                                                <font key="font" size="11" name="Helvetica"/>
+                                                <color key="textColor" red="0.51394511010362698" green="0.51394511010362698" blue="0.51394511010362698" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTh-oi-ly4">
+                                            <rect key="frame" x="336" y="58" width="141" height="26"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Version 0.5.11" id="XGX-KJ-sUE">
+                                                <font key="font" size="21" name="Helvetica"/>
+                                                <color key="textColor" red="0.45767891840000002" green="0.45767891840000002" blue="0.45767891840000002" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="y0n-PQ-58X" firstAttribute="top" secondItem="5bR-Ca-hF7" secondAttribute="top" constant="27" id="5Ar-Y0-Zoo"/>
+                                        <constraint firstItem="Jcx-EY-D4G" firstAttribute="leading" secondItem="PQ0-DR-uUF" secondAttribute="trailing" constant="40" id="GZc-Xc-qUD"/>
+                                        <constraint firstItem="y0n-PQ-58X" firstAttribute="leading" secondItem="PQ0-DR-uUF" secondAttribute="trailing" constant="108" id="Gdh-C3-2cE"/>
+                                        <constraint firstItem="PQ0-DR-uUF" firstAttribute="top" secondItem="5bR-Ca-hF7" secondAttribute="top" constant="30" id="M6f-xE-SP9"/>
+                                        <constraint firstItem="vTh-oi-ly4" firstAttribute="top" secondItem="5bR-Ca-hF7" secondAttribute="top" constant="138" id="VM9-iC-9yW"/>
+                                        <constraint firstItem="VgT-7q-EZi" firstAttribute="leading" secondItem="PQ0-DR-uUF" secondAttribute="trailing" constant="66" id="eKt-9n-hIz"/>
+                                        <constraint firstItem="PQ0-DR-uUF" firstAttribute="leading" secondItem="5bR-Ca-hF7" secondAttribute="leading" constant="46" id="lLC-LH-xNU"/>
+                                        <constraint firstItem="vTh-oi-ly4" firstAttribute="leading" secondItem="PQ0-DR-uUF" secondAttribute="trailing" constant="129" id="p3v-4O-bV0"/>
+                                        <constraint firstItem="Jcx-EY-D4G" firstAttribute="top" secondItem="vTh-oi-ly4" secondAttribute="bottom" constant="-70" id="p6U-fr-0fv"/>
+                                        <constraint firstAttribute="bottom" secondItem="VgT-7q-EZi" secondAttribute="bottom" constant="20" id="pvG-oX-ieX"/>
+                                    </constraints>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Licenses" identifier="2" id="o0S-PO-0bj" userLabel="Licenses Tab">
+                                <view key="view" id="4Of-5E-reR">
+                                    <rect key="frame" x="0.0" y="0.0" width="637" height="222"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsY-y9-nGu">
+                                            <rect key="frame" x="0.0" y="0.0" width="637" height="222"/>
+                                            <clipView key="contentView" copiesOnScroll="NO" id="EBF-27-eae">
+                                                <rect key="frame" x="0.0" y="0.0" width="637" height="222"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" continuousSpellChecking="YES" allowsUndo="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="QMU-zl-EL2">
+                                                        <rect key="frame" x="0.0" y="107" width="637" height="222"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <size key="minSize" width="637" height="222"/>
+                                                        <size key="maxSize" width="637" height="10000000"/>
+                                                        <attributedString key="textStorage">
+                                                            <fragment>
+                                                                <string key="content">Artifice is proprietary software, released freely, in the hope that it encourages the creativity of its users.
+
+Artifice uses the ImageMagick library, which is </string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="14" name="Georgia"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="Copyright 1999-2016 ImageMagick Studio LLC. The license under which ImageMagick is used follows:  ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="14" name="Georgia"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">Copyright 1999-2016 ImageMagick Studio LLC, a non-profit organization dedicated to making software imaging solutions freely available.
+</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <mutableString key="content">1. Definitions.
+License shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+Licensor shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+Legal Entity shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, control means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+You (or Your) shall mean an individual or Legal Entity exercising permissions granted by this License.
+Source form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+Object form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+Work shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).
+Derivative Works shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+Contribution shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as Not a Contribution.
+Contributor shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.
+2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.
+3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:
+</mutableString>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops/>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">	a	</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">You must give any other recipients of the Work or Derivative Works a copy of this License; and
+</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">	b	</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">You must cause any modified files to carry prominent notices stating that You changed the files; and
+</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">	c	</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <mutableString key="content">You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
+</mutableString>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">	d	</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <mutableString key="content">If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.
+</mutableString>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <mutableString key="content">You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.
+5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.
+6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.
+7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an AS IS BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.
+9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.</mutableString>
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="10" name="Monaco"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                        <tabStops/>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.33333000000000002" green="0.33333000000000002" blue="0.33333000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </clipView>
+                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="lhB-Mg-reJ">
+                                                <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                            <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="LUP-TX-njs">
+                                                <rect key="frame" x="621" y="0.0" width="16" height="222"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                        </scrollView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AsY-y9-nGu" firstAttribute="top" secondItem="4Of-5E-reR" secondAttribute="top" id="0w3-tq-IEB"/>
+                                        <constraint firstItem="AsY-y9-nGu" firstAttribute="leading" secondItem="4Of-5E-reR" secondAttribute="leading" id="PzJ-iS-dWd"/>
+                                        <constraint firstAttribute="bottom" secondItem="AsY-y9-nGu" secondAttribute="bottom" id="UWm-1D-PKh"/>
+                                        <constraint firstAttribute="trailing" secondItem="AsY-y9-nGu" secondAttribute="trailing" id="gwx-r9-6WU"/>
+                                    </constraints>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Acknowledgments" identifier="3" id="vN8-yA-Ptl" userLabel="Acknowledgments Tab">
+                                <view key="view" id="4zf-Mn-k0a">
+                                    <rect key="frame" x="0.0" y="0.0" width="637" height="222"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="38P-I8-qFz">
+                                            <rect key="frame" x="20" y="0.0" width="597" height="195"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="597" id="gfh-My-56C"/>
+                                                <constraint firstAttribute="height" constant="195" id="nVW-Sg-yb9"/>
+                                            </constraints>
+                                            <textFieldCell key="cell" allowsUndo="NO" sendsActionOnEndEditing="YES" state="on" alignment="center" drawsBackground="YES" id="eW3-8Z-8uc">
+                                                <font key="font" size="20" name="Georgia"/>
+                                                <string key="title">The author wishes to thank the users of the /r/ArtificeMTG subreddit on Reddit.com, who collectively tested Artifice to and beyond the breaking point, and continue to find bugs for me to squash.
+
+Artifice uses the ImageMagick library, which is Copyright 1999-2016 ImageMagick Studio LLC.</string>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="38P-I8-qFz" firstAttribute="top" secondItem="4zf-Mn-k0a" secondAttribute="top" constant="27" id="JkT-8l-lD9"/>
+                                        <constraint firstAttribute="trailing" secondItem="38P-I8-qFz" secondAttribute="trailing" constant="20" id="O3z-TT-isU"/>
+                                    </constraints>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ceb-K6-DbF" secondAttribute="trailing" id="Auc-OW-yGK"/>
+                    <constraint firstItem="ceb-K6-DbF" firstAttribute="top" secondItem="zVM-Jl-dM8" secondAttribute="top" id="EjZ-0O-qn0"/>
+                    <constraint firstAttribute="bottom" secondItem="ceb-K6-DbF" secondAttribute="bottom" id="iQ9-Vs-xx9"/>
+                    <constraint firstItem="ceb-K6-DbF" firstAttribute="leading" secondItem="zVM-Jl-dM8" secondAttribute="leading" id="y9v-V2-ECg"/>
+                </constraints>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="F852B6D0-1DD5-4D3A-B852-4539ADB53C60" autosavesConfiguration="NO" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconOnly" sizeMode="regular" id="ea3-cB-jPf">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="DtC-kJ-34l"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="YoE-QB-ye4"/>
+                    <toolbarItem implicitItemIdentifier="9858BA6B-32C8-4D54-8E84-FB0248CBEBA5" label="Tab Selector" paletteLabel="Tab Selector" id="Cj5-Vr-2yO">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="413" height="24"/>
+                        <size key="maxSize" width="415" height="25"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="YVV-H0-xvj">
+                            <rect key="frame" x="0.0" y="14" width="413" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="4Ka-U8-vzn">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment label="About" width="135" selected="YES"/>
+                                    <segment label="Licenses" width="135" tag="1"/>
+                                    <segment label="Acknowledgments" width="135"/>
+                                </segments>
+                            </segmentedCell>
+                            <connections>
+                                <action selector="aboutWindowSegmentedControlClicked:" target="Voe-Tx-rLC" id="olR-UI-anE"/>
+                            </connections>
+                        </segmentedControl>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="YoE-QB-ye4"/>
+                    <toolbarItem reference="Cj5-Vr-2yO"/>
+                    <toolbarItem reference="YoE-QB-ye4"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <point key="canvasLocation" x="138.5" y="66"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Artifice Logo" width="245.75999450683594" height="245.75999450683594"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+Text Codes:
+
+Artifice uses a simple code system to represent in-game graphics such as mana
+and tap symbols. The basic notation is a pair of curly braces {} surrounding a
+one, two, or three charater code. These codes can be used in the mana cost,
+rules text, and flavor text fields in the set editor interface, and will be
+rendered in the card view and set table as their appropriate symbols.
+
+    {C}    Colorless mana
+    {W}    White mana
+    {U}    Blue mana
+    {B}    Black mana
+    {R}    Red mana
+    {G}    Green mana
+
+    {0}    Generic mana (any number from 0-20)
+
+    {X}    Variable mana
+
+    {T}    Tap symbol
+    {Q}    Untap symbol
+
+    {W/P}  Phyrexian white mana
+    {U/P}  Phyrexian blue mana
+    {B/P}  Phyrexian black mana
+    {R/P}  Phyrexian red mana
+    {G/P}  Phyrexian green mana
+
+    {2/W}  Hybrid white mana
+    {2/U}  Hybrid blue mana
+    {2/B}  Hybrid black mana
+    {2/R}  Hybrid red mana
+    {2/G}  Hybrid green mana
+
+    {W/U}  Hybrid white/blue mana
+    {W/B}  Hybrid white/black mana
+    {U/B}  Hybrid blue/black mana
+    {U/R}  Hybrid blue/red mana
+    {B/R}  Hybrid black/red mana
+    {B/G}  Hybrid black/green mana
+    {R/G}  Hybrid red/green mana
+    {R/W}  Hybrid red/white mana
+    {G/W}  Hybrid green/white mana
+    {G/U}  Hybrid green/blue mana
+
+    {S}    Snow mana

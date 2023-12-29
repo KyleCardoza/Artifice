@@ -1,0 +1,19 @@
+<cockatrice_carddatabase version="3">
+  <cards>
+    <card>
+      <name></name> <!-- card.name -->
+      <set picURL=""> <!-- set.code --></set>
+      <related> <!-- Flipped side  --></related>
+      <color> <!-- One of these per color  --></color>
+      <manacost>  <!-- card.manaCost (format?)  --> </manacost>
+      <cmc> <!-- converted mana cost  --></cmc>
+      <type></type>
+      <pt> <!-- card.power/card.toughness  --></pt>
+      <loyalty> <!-- card.startingLoyalty  --></loyalty>
+      <tablerow></tablerow>  <!-- 0 = land, 1 = noncreature nonland, 2 = creature, 3 = noncreature spelll  -->
+      <text> <!-- card.rulesText  --></text>
+      <token></token>  <!-- 1 = token  -->
+      <cipt><!-- card.etbTapped --></cipt>
+    </card>
+  </cards>
+</cockatrice_carddatabase>

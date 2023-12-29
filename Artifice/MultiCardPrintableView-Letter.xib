@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MultiCardPrintableViewLetter" customModule="Artifice" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLeftView" destination="tH8-Mb-huH" id="4L8-6T-ym9"/>
+                <outlet property="bottomRightView" destination="aIO-Lv-Fe2" id="Uca-Ro-AJn"/>
+                <outlet property="contentView" destination="sz2-tF-MGn" id="Jt0-Lm-67J"/>
+                <outlet property="expansionSymbol" destination="Zhl-rH-TJ9" id="J0w-0B-0M0"/>
+                <outlet property="middleLeftView" destination="fyZ-ce-rbV" id="sR0-k1-HDu"/>
+                <outlet property="middleRightView" destination="2Om-2O-39t" id="f2q-8i-sY4"/>
+                <outlet property="pageNumber" destination="Sfe-Yf-pQ9" id="9gS-Rf-oHL"/>
+                <outlet property="setName" destination="p4m-TW-362" id="ZNr-aS-YQE"/>
+                <outlet property="topLeftView" destination="fGh-zY-MXy" id="885-bb-Ky6"/>
+                <outlet property="topRightView" destination="IVw-uq-v63" id="Rqw-yg-YVa"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="sz2-tF-MGn" userLabel="Multi-Card Printable View - Letter">
+            <rect key="frame" x="0.0" y="0.0" width="1602" height="2078"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ClX-PS-WeV" userLabel="Background">
+                    <rect key="frame" x="0.0" y="0.0" width="1602" height="2078"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Artifice Printing Support - Page Layouts - 6-Up - Letter" id="gld-ZW-Ehq"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fGh-zY-MXy" userLabel="Top Left">
+                    <rect key="frame" x="92" y="1462" width="712" height="522"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Blank Card Face - Landscape" id="BhZ-UF-d3Q"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IVw-uq-v63" userLabel="Top Right">
+                    <rect key="frame" x="801" y="1462" width="712" height="522"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Blank Card Face - Landscape" id="PEa-Rg-Omg"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-ce-rbV" userLabel="Middle Left">
+                    <rect key="frame" x="92" y="778" width="712" height="522"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Blank Card Face - Landscape" id="eR7-ix-cJp"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Om-2O-39t" userLabel="Middle Right">
+                    <rect key="frame" x="801" y="778" width="712" height="522"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Blank Card Face - Landscape" id="qf4-WZ-Ijc"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tH8-Mb-huH" userLabel="Bottom Left">
+                    <rect key="frame" x="92" y="94" width="712" height="522"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Blank Card Face - Landscape" id="fHG-sg-9Yw"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIO-Lv-Fe2" userLabel="Bottom Right">
+                    <rect key="frame" x="801" y="94" width="712" height="522"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Blank Card Face - Landscape" id="UEQ-YV-VrQ"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sfe-Yf-pQ9" userLabel="Page Number">
+                    <rect key="frame" x="865" y="639" width="609" height="86"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Page 000" id="PWg-9D-tZy">
+                        <font key="font" metaFont="system" size="48"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zhl-rH-TJ9" userLabel="Expansion Symbol">
+                    <rect key="frame" x="133" y="672" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Default Common Expansion Symbol" id="pdy-nE-6DV"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4m-TW-362">
+                    <rect key="frame" x="181" y="639" width="602" height="86"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Set Name" id="ITS-XR-bfJ">
+                        <font key="font" size="48" name="HelveticaNeue"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="676" y="1042"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Artifice Printing Support - Page Layouts - 6-Up - Letter" width="612" height="792"/>
+        <image name="Blank Card Face - Landscape" width="270" height="198.24000549316406"/>
+        <image name="Default Common Expansion Symbol" width="768" height="768"/>
+    </resources>
+</document>
